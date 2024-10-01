@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2022 The Bitcoin Core developers
+// Copyright (c) 2018-2022 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_FASTRANGE_H
-#define BITCOIN_UTIL_FASTRANGE_H
+#ifndef FUJICOIN_UTIL_FASTRANGE_H
+#define FUJICOIN_UTIL_FASTRANGE_H
 
 #include <cstdint>
 
@@ -48,4 +48,4 @@ static inline uint64_t FastRange64(uint64_t x, uint64_t n)
 #endif
 }
 
-#endif // BITCOIN_UTIL_FASTRANGE_H
+#endif // FUJICOIN_UTIL_FASTRANGE_H

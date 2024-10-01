@@ -51,13 +51,13 @@ Click-derecho para editar direccion o nivel</translation>
         <translation type="unfinished">Eliga la direccion para recibir monedas con</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Esta es tu direccion para enviar pagos con Bitcoin. Siempre revisa la cantidad y la direccion correcta de monedas antes de enviar.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Esta es tu direccion para enviar pagos con Fujicoin. Siempre revisa la cantidad y la direccion correcta de monedas antes de enviar.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Esta es la direccion de Bitcoin para recibir pagos. Usa el botton ‘Crea nueva direccion de pagos’ en la pestaña crear nueva direccion. 
+        <translation type="unfinished">Esta es la direccion de Fujicoin para recibir pagos. Usa el botton ‘Crea nueva direccion de pagos’ en la pestaña crear nueva direccion. 
 la entrada solo es posible con las direcciones del tipo ‘legacy’</translation>
     </message>
     <message>
@@ -157,8 +157,8 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
         <translation type="unfinished">Confirmar el cifrado de la cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: Si cifras tu billetera y pierdes tu frase de contraseña,podrias 1 PERDER TODS TUS BITCOINS 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: Si cifras tu billetera y pierdes tu frase de contraseña,podrias 1 PERDER TODS TUS FUJICOINS 1 !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -177,8 +177,8 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
         <translation type="unfinished">Atrás</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerde que el cifrado de su billetera no puede proteger completamente sus bitcoins de ser robados por el malware que infecta su ordenador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerde que el cifrado de su billetera no puede proteger completamente sus fujicoins de ser robados por el malware que infecta su ordenador.</translation>
     </message>
     </context>
 <context>
@@ -235,7 +235,7 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation type="unfinished">Cambiar la contraseña usada para la encriptación de la cartera</translation>
@@ -261,16 +261,16 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
         <translation type="unfinished">Firmar &amp;mensaje...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Firme mensajes con sus direcciones de Bitcoin para demostrar que los posee</translation>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
+        <translation type="unfinished">Firme mensajes con sus direcciones de Fujicoin para demostrar que los posee</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifique los mensajes para asegurarse de que se firmaron con direcciones de Bitcoin especificadas.</translation>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
+        <translation type="unfinished">Verifique los mensajes para asegurarse de que se firmaron con direcciones de Fujicoin especificadas.</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -393,11 +393,11 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
         <translation type="unfinished">&amp;Mostrar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n conexiones activas con la red Bitcoin</numerusform>
-            <numerusform>%n conexiones activas con la red Bitcoin </numerusform>
+            <numerusform>%n conexiones activas con la red Fujicoin</numerusform>
+            <numerusform>%n conexiones activas con la red Fujicoin </numerusform>
         </translation>
     </message>
     <message>
@@ -563,8 +563,8 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
         <translation type="unfinished">Direcciones locales</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">Direcciones de red que tu nodo Bitcoin usa actualmente para comunicarse con otros nodos.</translation>
+        <source>Network addresses that your Fujicoin node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">Direcciones de red que tu nodo Fujicoin usa actualmente para comunicarse con otros nodos.</translation>
     </message>
     <message>
         <source>Hide Peers Detail</source>
@@ -611,8 +611,8 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Puedes firmar mensajes o acuerdos con tus direcciones tipo legacy (P2PKH) para demostrar que puedes recibir los bitcoins que se envíen a ellas. Ten cuidado de no firmar cosas confusas o al azar, ya que los ataques de phishing pueden tratar de engañarte para que les envíes la firma con tu identidad. Firma solo declaraciones totalmente detalladas con las que estés de acuerdo.</translation>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive fujicoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Puedes firmar mensajes o acuerdos con tus direcciones tipo legacy (P2PKH) para demostrar que puedes recibir los fujicoins que se envíen a ellas. Ten cuidado de no firmar cosas confusas o al azar, ya que los ataques de phishing pueden tratar de engañarte para que les envíes la firma con tu identidad. Firma solo declaraciones totalmente detalladas con las que estés de acuerdo.</translation>
     </message>
     <message>
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
@@ -688,7 +688,7 @@ la entrada solo es posible con las direcciones del tipo ‘legacy’</translatio
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>Failed to remove snapshot chainstate dir (%s). Manually remove it before restarting.
 </source>

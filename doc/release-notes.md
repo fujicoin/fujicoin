@@ -1,44 +1,44 @@
-Bitcoin Core version 28.0 is now available from:
+Fujicoin Core version 28.0 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-28.0/>
+  <https://fujicoincore.org/bin/fujicoin-core-28.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/fujicoin/fujicoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://bitcoincore.org/en/list/announcements/join/>
+  <https://fujicoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
-installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on macOS)
-or `bitcoind`/`bitcoin-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/Fujicoin-Qt` (on macOS)
+or `fujicoind`/`fujicoin-qt` (on Linux).
 
-Upgrading directly from a version of Bitcoin Core that has reached its EOL is
+Upgrading directly from a version of Fujicoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
-wallet versions of Bitcoin Core are generally supported.
+wallet versions of Fujicoin Core are generally supported.
 
-Running bitcoin core binaries on macOS requires self signing.
+Running fujicoin core binaries on macOS requires self signing.
 ```
-cd /path/to/bitcoin-core/bin
-xattr -d com.apple.quarantine bitcoin-cli bitcoin-qt bitcoin-tx bitcoin-util bitcoin-wallet bitcoind test_bitcoin
-codesign -s - bitcoin-cli bitcoin-qt bitcoin-tx bitcoin-util bitcoin-wallet bitcoind test_bitcoin
+cd /path/to/fujicoin-core/bin
+xattr -d com.apple.quarantine fujicoin-cli fujicoin-qt fujicoin-tx fujicoin-util fujicoin-wallet fujicoind test_fujicoin
+codesign -s - fujicoin-cli fujicoin-qt fujicoin-tx fujicoin-util fujicoin-wallet fujicoind test_fujicoin
 ```
 
 Compatibility
 ==============
 
-Bitcoin Core is supported and extensively tested on operating systems
-using the Linux Kernel 3.17+, macOS 11.0+, and Windows 7 and newer. Bitcoin
+Fujicoin Core is supported and extensively tested on operating systems
+using the Linux Kernel 3.17+, macOS 11.0+, and Windows 7 and newer. Fujicoin
 Core should also work on most other Unix-like systems but is not as
-frequently tested on them. It is not recommended to use Bitcoin Core on
+frequently tested on them. It is not recommended to use Fujicoin Core on
 unsupported systems.
 
 Notable changes
@@ -47,7 +47,7 @@ Notable changes
 Testnet4/BIP94 support
 -----
 
-Support for Testnet4 as specified in [BIP94](https://github.com/bitcoin/bips/blob/master/bip-0094.mediawiki)
+Support for Testnet4 as specified in [BIP94](https://github.com/fujicoin/bips/blob/master/bip-0094.mediawiki)
 has been added. The network can be selected with the `-testnet4` option and
 the section header is also named `[testnet4]`.
 
@@ -58,15 +58,15 @@ release.
 Windows Data Directory
 ----------------------
 
-The default data directory on Windows has been moved from `C:\Users\Username\AppData\Roaming\Bitcoin`
-to `C:\Users\Username\AppData\Local\Bitcoin`. Bitcoin Core will check the existence
+The default data directory on Windows has been moved from `C:\Users\Username\AppData\Roaming\Fujicoin`
+to `C:\Users\Username\AppData\Local\Fujicoin`. Fujicoin Core will check the existence
 of the old directory first and continue to use that directory for backwards
 compatibility if it is present. (#27064)
 
 P2P and network changes
 -----------------------
 
-- Previously if Bitcoin Core was listening for P2P connections, either using
+- Previously if Fujicoin Core was listening for P2P connections, either using
   default settings or via `bind=addr:port` it would always also bind to
   `127.0.0.1:8334` to listen for Tor connections. It was not possible to switch
   this off, even if the node didn't use Tor. This has been changed and now
@@ -78,7 +78,7 @@ P2P and network changes
   `127.0.0.1:8334`, you need to now make this explicit by using
   `bind=... bind=127.0.0.1:8334=onion`. (#22729)
 
-- Bitcoin Core will now fail to start up if any of its P2P binds fail, rather
+- Fujicoin Core will now fail to start up if any of its P2P binds fail, rather
   than the previous behaviour where it would only abort startup if all P2P
   binds had failed. (#22729)
 
@@ -107,7 +107,7 @@ Mempool Policy Changes
 
 - Transactions with version number set to 3 are now treated as standard on all networks (#29496),
   subject to Opt-in Topologically Restricted Until Confirmation (TRUC) Transactions policy as
-  described in [BIP 431](https://github.com/bitcoin/bips/blob/master/bip-0431.mediawiki).  The
+  described in [BIP 431](https://github.com/fujicoin/bips/blob/master/bip-0431.mediawiki).  The
   policy includes limits on spending unconfirmed outputs (#28948), eviction of a previous descendant
   if a more incentive-compatible one is submitted (#29306), and a maximum transaction size of 10,000vB
   (#29873). These restrictions simplify the assessment of incentive compatibility of accepting or
@@ -133,7 +133,7 @@ Updated RPCs
 
 - The JSON-RPC server now recognizes JSON-RPC 2.0 requests and responds with
 strict adherence to the [specification](https://www.jsonrpc.org/specification).
-See [JSON-RPC-interface.md](https://github.com/bitcoin/bitcoin/blob/master/doc/JSON-RPC-interface.md#json-rpc-11-vs-20) for details.
+See [JSON-RPC-interface.md](https://github.com/fujicoin/fujicoin/blob/master/doc/JSON-RPC-interface.md#json-rpc-11-vs-20) for details.
 
 - The `dumptxoutset` RPC now returns the UTXO set dump in a new and
   improved format. At the same time the `loadtxoutset` RPC now
@@ -148,7 +148,7 @@ See [JSON-RPC-interface.md](https://github.com/bitcoin/bitcoin/blob/master/doc/J
 - The `warnings` field in `getblockchaininfo`, `getmininginfo` and
   `getnetworkinfo` now returns all the active node warnings as an array
   of strings, instead of just a single warning. The current behaviour
-  can temporarily be restored by running bitcoind with configuration
+  can temporarily be restored by running fujicoind with configuration
   option `-deprecatedrpc=warnings`.
 
 - Previously when using the `sendrawtransaction` rpc and specifying outputs
@@ -184,9 +184,9 @@ Build System
 ------------
 
 - GCC 11.1 or later, or Clang 16.0 or later,
-are now required to compile Bitcoin Core.
+are now required to compile Fujicoin Core.
 
-- The minimum required glibc to run Bitcoin Core is now
+- The minimum required glibc to run Fujicoin Core is now
 2.31. This means that RHEL 8 and Ubuntu 18.04 (Bionic)
 are no-longer supported. (#29987)
 
@@ -262,13 +262,13 @@ Tests
 
 - The BIP94 timewarp attack mitigation is now active on the `regtest` network
 
-- `-testdatadir` is added to `test_bitcoin` to allow specifying the location for unit test data directories.
+- `-testdatadir` is added to `test_fujicoin` to allow specifying the location for unit test data directories.
 
 Blockstorage
 ------------
 
 - Block files are now XOR'd by default with a key stored in the blocksdir.
-Previous releases of Bitcoin Core or previous external software will not be able to read the blocksdir with a non-zero XOR-key.
+Previous releases of Fujicoin Core or previous external software will not be able to read the blocksdir with a non-zero XOR-key.
 Refer to the `-blocksxor` help for more details.
 
 Credits
@@ -356,4 +356,4 @@ Thanks to everyone who directly contributed to this release:
 - willcl-ark
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/bitcoin/bitcoin/).
+[Transifex](https://www.transifex.com/fujicoin/fujicoin/).

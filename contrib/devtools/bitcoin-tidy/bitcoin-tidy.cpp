@@ -1,4 +1,4 @@
-// Copyright (c) 2023 Bitcoin Developers
+// Copyright (c) 2023 Fujicoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,17 +8,17 @@
 #include <clang-tidy/ClangTidyModule.h>
 #include <clang-tidy/ClangTidyModuleRegistry.h>
 
-class BitcoinModule final : public clang::tidy::ClangTidyModule
+class FujicoinModule final : public clang::tidy::ClangTidyModule
 {
 public:
     void addCheckFactories(clang::tidy::ClangTidyCheckFactories& CheckFactories) override
     {
-        CheckFactories.registerCheck<bitcoin::LogPrintfCheck>("bitcoin-unterminated-logprintf");
-        CheckFactories.registerCheck<bitcoin::NonTrivialThreadLocal>("bitcoin-nontrivial-threadlocal");
+        CheckFactories.registerCheck<fujicoin::LogPrintfCheck>("fujicoin-unterminated-logprintf");
+        CheckFactories.registerCheck<fujicoin::NonTrivialThreadLocal>("fujicoin-nontrivial-threadlocal");
     }
 };
 
-static clang::tidy::ClangTidyModuleRegistry::Add<BitcoinModule>
-    X("bitcoin-module", "Adds bitcoin checks.");
+static clang::tidy::ClangTidyModuleRegistry::Add<FujicoinModule>
+    X("fujicoin-module", "Adds fujicoin checks.");
 
-volatile int BitcoinModuleAnchorSource = 0;
+volatile int FujicoinModuleAnchorSource = 0;
