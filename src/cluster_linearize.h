@@ -402,7 +402,7 @@ public:
      * a feerate not below GetChunk(0)'s, then moving IntersectPrefixes(subset) to the front of
      * (what remains of) the linearization is guaranteed not to make it worse at any point.
      *
-     * See https://delvingfujicoin.org/t/introduction-to-cluster-linearization/1032 for background.
+     * See https://delvingbitcoin.org/t/introduction-to-cluster-linearization/1032 for background.
      */
     SetInfo<SetType> IntersectPrefixes(const SetInfo<SetType>& subset) const noexcept
     {

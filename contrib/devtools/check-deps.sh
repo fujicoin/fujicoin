@@ -52,7 +52,7 @@ SUPPRESS["libfujicoin_node_a-init.o libfujicoin_wallet_a-bdb.o _ZN6wallet27Berke
 # init/common.cpp file calls InitError and InitWarning from interface_ui which
 # is currently part of the node library. interface_ui should just be part of the
 # common library instead, and is moved in
-# https://github.com/fujicoin/fujicoin/issues/10102
+# https://github.com/bitcoin/bitcoin/issues/10102
 SUPPRESS["libfujicoin_common_a-common.o libfujicoin_node_a-interface_ui.o _Z11InitWarningRK13bilingual_str"]=1
 SUPPRESS["libfujicoin_common_a-common.o libfujicoin_node_a-interface_ui.o _Z9InitErrorRK13bilingual_str"]=1
 # rpc/external_signer.cpp adds defines node RPC methods but is built as part of the

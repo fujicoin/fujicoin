@@ -19,8 +19,8 @@ Features:
 * No runtime dependencies.
 * Optional module for public key recovery.
 * Optional module for ECDH key exchange.
-* Optional module for Schnorr signatures according to [BIP-340](https://github.com/fujicoin/bips/blob/master/bip-0340.mediawiki).
-* Optional module for ElligatorSwift key exchange according to [BIP-324](https://github.com/fujicoin/bips/blob/master/bip-0324.mediawiki).
+* Optional module for Schnorr signatures according to [BIP-340](https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki).
+* Optional module for ElligatorSwift key exchange according to [BIP-324](https://github.com/bitcoin/bips/blob/master/bip-0324.mediawiki).
 
 Implementation details
 ----------------------

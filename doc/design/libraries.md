@@ -109,4 +109,4 @@ class fujicoin-qt,fujicoind,fujicoin-cli,fujicoin-wallet bold
 
 ## Work in progress
 
-- Validation code is moving from *libfujicoin_node* to *libfujicoin_kernel* as part of [The libfujicoinkernel Project #27587](https://github.com/fujicoin/fujicoin/issues/27587)
+- Validation code is moving from *libfujicoin_node* to *libfujicoin_kernel* as part of [The libfujicoinkernel Project #27587](https://github.com/bitcoin/bitcoin/issues/27587)

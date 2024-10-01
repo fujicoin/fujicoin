@@ -300,7 +300,7 @@ jobs:
 
       - name: Clone fuzz corpus
         run: |
-          git clone --depth=1 https://github.com/fujicoin-core/qa-assets "$env:RUNNER_TEMP\qa-assets"
+          git clone --depth=1 https://github.com/bitcoin-core/qa-assets "$env:RUNNER_TEMP\qa-assets"
           Set-Location "$env:RUNNER_TEMP\qa-assets"
           Write-Host "Using qa-assets repo from commit ..."
           git log -1

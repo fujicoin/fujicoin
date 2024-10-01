@@ -50,7 +50,7 @@ It is not necessary to build wallet functionality to run fujicoind or the GUI.
 
 ###### Descriptor Wallet Support
 
-`sqlite3` is required to enable support for [descriptor wallets](https://github.com/fujicoin/fujicoin/blob/master/doc/descriptors.md).
+`sqlite3` is required to enable support for [descriptor wallets](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md).
 
 ```bash
 pkgin install sqlite3
