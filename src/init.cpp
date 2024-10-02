@@ -142,6 +142,7 @@ static constexpr bool DEFAULT_PROXYRANDOMIZE{true};
 static constexpr bool DEFAULT_REST_ENABLE{false};
 static constexpr bool DEFAULT_I2P_ACCEPT_INCOMING{true};
 static constexpr bool DEFAULT_STOPAFTERBLOCKIMPORT{false};
+int Chainstate::IsStartUp = 3;
 
 #ifdef WIN32
 // Win32 LevelDB doesn't use filedescriptors, and the ones used for
