@@ -313,7 +313,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].min_activation_height = 0; // No activation delay
 
         consensus.nMinimumChainWork = uint256{"0000000000000000000000000000000000000000000000000000000000100010"};
-        consensus.defaultAssumeValid = uint256{""}; // 0
+        consensus.defaultAssumeValid = uint256{}; // 0
 
         pchMessageStart[0] = 0x6a;
         pchMessageStart[1] = 0x69;
