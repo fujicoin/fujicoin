@@ -334,10 +334,8 @@ public:
                 1,
                 1 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        LogPrintf("hashGenesisBlock=%s\n", consensus.hashGenesisBlock.GetHex());
-        LogPrintf("hashMerkleRoot=%s\n", genesis.hashMerkleRoot.GetHex());
-        assert(consensus.hashGenesisBlock == uint256S("0x00000000da84f2bafbbc53dee25a72ae507ff4914b867c565be350b0da8bf043"));
-        assert(genesis.hashMerkleRoot == uint256S("0x7aa0a7ae1e223414cb807e40cd57e667b718e42aaf9306db9102fe28912b7b4e"));
+        assert(consensus.hashGenesisBlock == uint256S("0x72f2b384bdac218ca36e8650a32982b94aa8b6c8f9cc2bddd146222463ab450a"));
+        assert(genesis.hashMerkleRoot == uint256S("0x22b911b39648e602ae3b56e17a58d3b7040ed5b34d19e1dbf3b620ac383e395c"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
