@@ -73,14 +73,14 @@ To mine the first block in your custom chain, you can run:
     CLI="./fujicoin-cli -signet"
     MINER="./miner"
     GRIND="./fujicoin-util grind"
-    ADDRESS="X93kbwJctRMXzVXRX6MUxUeteYGbLFz5MR"  # Note: Use legacy address
+    ADDR="X93kbwJctRMXzVXRX6MUxUeteYGbLFz5MR"  # Note: Use legacy address
 
 To mining block number 1, execute the following command. 
 This will mine a block with the current timestamp. 
 If you want to backdate the chain, you can give a different timestamp to --set-block-time. 
 A UnixTime 12 hours ago is recommended.
 
-    $MINER --cli="$CLI" generate --grind-cmd="$GRIND" --address="$ADDRESS" --nbits=1f0fffff --set-block-time=-1
+    $MINER --cli="$CLI" generate --grind-cmd="$GRIND" --address="$ADDR" --nbits=1f0fffff --set-block-time=-1
 
 
 Using the --ongoing parameter will then cause the signet miner to create blocks indefinitely. 
