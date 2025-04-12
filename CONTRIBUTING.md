@@ -30,13 +30,13 @@ Fujicoin Core and how to run the unit tests, functional tests, and fuzz tests.
 
 There are many open issues of varying difficulty waiting to be fixed.
 If you're looking for somewhere to start contributing, check out the
-[good first issue](https://github.com/fujicoin/fujicoin/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+[good first issue](https://github.com/bitcoin/bitcoin/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 list or changes that are
-[up for grabs](https://github.com/fujicoin/fujicoin/issues?utf8=%E2%9C%93&q=label%3A%22Up+for+grabs%22).
+[up for grabs](https://github.com/bitcoin/bitcoin/issues?utf8=%E2%9C%93&q=label%3A%22Up+for+grabs%22).
 Some of them might no longer be applicable. So if you are interested, but
 unsure, you might want to leave a comment on the issue first.
 
-You may also participate in the [Fujicoin Core PR Review Club](https://fujicoincore.reviews/).
+You may also participate in the [Fujicoin Core PR Review Club](https://bitcoincore.reviews/).
 
 ### Good First Issue Label
 
@@ -56,19 +56,19 @@ Communication Channels
 
 Most communication about Fujicoin Core development happens on IRC, in the
 `#fujicoin-core-dev` channel on Libera Chat. The easiest way to participate on IRC is
-with the web client, [web.libera.chat](https://web.libera.chat/#fujicoin-core-dev). Chat
+with the web client, [web.libera.chat](https://web.libera.chat/#bitcoin-core-dev). Chat
 history logs can be found
-on [https://www.erisian.com.au/fujicoin-core-dev/](https://www.erisian.com.au/fujicoin-core-dev/)
-and [https://gnusha.org/fujicoin-core-dev/](https://gnusha.org/fujicoin-core-dev/).
+on [https://www.erisian.com.au/bitcoin-core-dev/](https://www.erisian.com.au/bitcoin-core-dev/)
+and [https://gnusha.org/bitcoin-core-dev/](https://gnusha.org/bitcoin-core-dev/).
 
 Discussion about codebase improvements happens in GitHub issues and pull
 requests.
 
 The developer
-[mailing list](https://groups.google.com/g/fujicoindev)
+[mailing list](https://groups.google.com/g/bitcoindev)
 should be used to discuss complicated or controversial consensus or P2P protocol changes before working on
 a patch set.
-Archives can be found on [https://gnusha.org/pi/fujicoindev/](https://gnusha.org/pi/fujicoindev/).
+Archives can be found on [https://gnusha.org/pi/bitcoindev/](https://gnusha.org/pi/bitcoindev/).
 
 
 Contributor Workflow
@@ -84,8 +84,8 @@ To contribute a patch, the workflow is as follows:
   1. Create topic branch
   1. Commit patches
 
-For GUI-related issues or pull requests, the https://github.com/fujicoin-core/gui repository should be used.
-For all other issues and pull requests, the https://github.com/fujicoin/fujicoin node repository should be used.
+For GUI-related issues or pull requests, the https://github.com/bitcoin-core/gui repository should be used.
+For all other issues and pull requests, the https://github.com/bitcoin/bitcoin node repository should be used.
 
 The master branch for all monotree repositories is identical.
 
@@ -176,7 +176,7 @@ subsequent comment to the PR.
 ### Translation changes
 
 Note that translations should not be submitted as pull requests. Please see
-[Translation Process](https://github.com/fujicoin/fujicoin/blob/master/doc/translation_process.md)
+[Translation Process](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md)
 for more information on helping with translations.
 
 ### Work in Progress Changes and Requests for Comments
@@ -232,7 +232,7 @@ pull request to pull request.
 
 When a pull request conflicts with the target branch, you may be asked to rebase it on top of the current target branch.
 
-    git fetch https://github.com/fujicoin/fujicoin  # Fetch the latest upstream commit
+    git fetch https://github.com/bitcoin/bitcoin  # Fetch the latest upstream commit
     git rebase FETCH_HEAD  # Rebuild commits on top of the new base
 
 This project aims to have a clean git history, where code changes are only made in non-merge commits. This simplifies
@@ -429,10 +429,10 @@ Rebased-From: <commit hash of the original commit>
 ```
 
 Have a look at [an example backport PR](
-https://github.com/fujicoin/fujicoin/pull/16189).
+https://github.com/bitcoin/bitcoin/pull/16189).
 
 Also see the [backport.py script](
-https://github.com/fujicoin-core/fujicoin-maintainer-tools#backport).
+https://github.com/bitcoin-core/bitcoin-maintainer-tools#backport).
 
 Copyright
 ---------

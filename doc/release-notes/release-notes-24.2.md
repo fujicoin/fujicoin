@@ -3,18 +3,18 @@
 
 Fujicoin Core version 24.2 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-24.2/>
+  <https://bitcoincore.org/bin/bitcoin-core-24.2/>
 
 This release includes various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -73,4 +73,4 @@ Thanks to everyone who directly contributed to this release:
 - Pieter Wuille
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

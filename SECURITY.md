@@ -3,7 +3,7 @@
 ## Supported Versions
 
 See our website for versions of Fujicoin Core that are currently supported with
-security updates: https://fujicoincore.org/en/lifecycle/#schedule
+security updates: https://bitcoincore.org/en/lifecycle/#schedule
 
 ## Reporting a Vulnerability
 

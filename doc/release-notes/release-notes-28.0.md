@@ -1,17 +1,17 @@
 Fujicoin Core version 28.0 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-28.0/>
+  <https://bitcoincore.org/bin/bitcoin-core-28.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -47,7 +47,7 @@ Notable changes
 Testnet4/BIP94 support
 -----
 
-Support for Testnet4 as specified in [BIP94](https://github.com/fujicoin/bips/blob/master/bip-0094.mediawiki)
+Support for Testnet4 as specified in [BIP94](https://github.com/bitcoin/bips/blob/master/bip-0094.mediawiki)
 has been added. The network can be selected with the `-testnet4` option and
 the section header is also named `[testnet4]`.
 
@@ -68,7 +68,7 @@ JSON-RPC 2.0 Support
 
 The JSON-RPC server now recognizes JSON-RPC 2.0 requests and responds with
 strict adherence to the [specification](https://www.jsonrpc.org/specification).
-See [JSON-RPC-interface.md](https://github.com/fujicoin/fujicoin/blob/master/doc/JSON-RPC-interface.md#json-rpc-11-vs-20) for details. (#27101)
+See [JSON-RPC-interface.md](https://github.com/bitcoin/bitcoin/blob/master/doc/JSON-RPC-interface.md#json-rpc-11-vs-20) for details. (#27101)
 
 JSON-RPC clients may need to be updated to be compatible with the JSON-RPC server.
 Please open an issue on GitHub if any compatibility issues are found.
@@ -122,7 +122,7 @@ Mempool Policy Changes
 
 - Transactions with version number set to 3 are now treated as standard on all networks (#29496),
   subject to opt-in Topologically Restricted Until Confirmation (TRUC) transaction policy as
-  described in [BIP 431](https://github.com/fujicoin/bips/blob/master/bip-0431.mediawiki).  The
+  described in [BIP 431](https://github.com/bitcoin/bips/blob/master/bip-0431.mediawiki).  The
   policy includes limits on spending unconfirmed outputs (#28948), eviction of a previous descendant
   if a more incentive-compatible one is submitted (#29306), and a maximum transaction size of 10,000vB
   (#29873). These restrictions simplify the assessment of incentive compatibility of accepting or
@@ -368,4 +368,4 @@ Thanks to everyone who directly contributed to this release:
 - willcl-ark
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

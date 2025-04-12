@@ -128,7 +128,7 @@ add_executable(fuzz
   txrequest.cpp
   # Visual Studio 2022 version 17.12 introduced a bug
   # that causes an internal compiler error.
-  # See: https://github.com/fujicoin/fujicoin/issues/31303
+  # See: https://github.com/bitcoin/bitcoin/issues/31303
   $<$<VERSION_LESS:${MSVC_VERSION},1942>:utxo_snapshot.cpp>
   utxo_total_supply.cpp
   validation_load_mempool.cpp

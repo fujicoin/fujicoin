@@ -441,8 +441,8 @@ if(BUILD_UTIL_CHAINSTATE)
   #       in the future after reordering Guix script commands to
   #       perform binary checks after the installation step.
   # Relevant discussions:
-  # - https://github.com/hebasto/fujicoin/pull/236#issuecomment-2183120953
-  # - https://github.com/fujicoin/fujicoin/pull/30312#issuecomment-2191235833
+  # - https://github.com/hebasto/bitcoin/pull/236#issuecomment-2183120953
+  # - https://github.com/bitcoin/bitcoin/pull/30312#issuecomment-2191235833
   set_target_properties(fujicoin-chainstate PROPERTIES
     SKIP_BUILD_RPATH OFF
   )

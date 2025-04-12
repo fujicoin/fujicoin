@@ -5,7 +5,7 @@ Setup
 ---------------------
 Fujicoin Core is the original Fujicoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Fujicoin transactions, which requires several hundred gigabytes or more of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to several days or more.
 
-To download Fujicoin Core, visit [fujicoincore.org](https://fujicoincore.org/en/download/).
+To download Fujicoin Core, visit [fujicoincore.org](https://bitcoincore.org/en/download/).
 
 Running
 ---------------------
@@ -28,11 +28,11 @@ Drag Fujicoin Core to your applications folder, and then run Fujicoin Core.
 
 ### Need Help?
 
-* See the documentation at the [Fujicoin Wiki](https://en.fujicoin.it/wiki/Main_Page)
+* See the documentation at the [Fujicoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [Fujicoin StackExchange](https://fujicoin.stackexchange.com).
-* Ask for help on #fujicoin on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#fujicoin).
-* Ask for help on the [FujicoinTalk](https://fujicointalk.org/) forums, in the [Technical Support board](https://fujicointalk.org/index.php?board=4.0).
+* Ask for help on [Fujicoin StackExchange](https://bitcoin.stackexchange.com).
+* Ask for help on #fujicoin on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#bitcoin).
+* Ask for help on the [FujicoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -53,7 +53,7 @@ The Fujicoin repo's [root README](/README.md) contains relevant information on t
 - [Developer Notes](developer-notes.md)
 - [Productivity Notes](productivity.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://doxygen.fujicoincore.org/)
+- [Source Code Documentation (External Link)](https://doxygen.bitcoincore.org/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [JSON-RPC Interface](JSON-RPC-interface.md)
@@ -64,8 +64,8 @@ The Fujicoin repo's [root README](/README.md) contains relevant information on t
 - [Internal Design Docs](design/)
 
 ### Resources
-* Discuss on the [FujicoinTalk](https://fujicointalk.org/) forums, in the [Development & Technical Discussion board](https://fujicointalk.org/index.php?board=6.0).
-* Discuss project-specific development on #fujicoin-core-dev on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#fujicoin-core-dev).
+* Discuss on the [FujicoinTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
+* Discuss project-specific development on #fujicoin-core-dev on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#bitcoin-core-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

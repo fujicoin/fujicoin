@@ -3,18 +3,18 @@
 
 Fujicoin Core version 26.0 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-26.0/>
+  <https://bitcoincore.org/bin/bitcoin-core-26.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -44,7 +44,7 @@ P2P and network changes
 -----------------------
 
 - Experimental support for the v2 transport protocol defined in
-  [BIP324](https://github.com/fujicoin/bips/blob/master/bip-0324.mediawiki) was added.
+  [BIP324](https://github.com/bitcoin/bips/blob/master/bip-0324.mediawiki) was added.
   It is off by default, but when enabled using `-v2transport` it will be negotiated
   on a per-connection basis with other peers that support it too. The existing
   v1 transport protocol remains fully supported.
@@ -80,9 +80,9 @@ Updated RPCs
 - A new argument `v2transport` was added to the `addnode` RPC to indicate whether a v2 transaction connection
   is to be attempted with the peer.
 
-- [Miniscript](https://fujicoin.sipa.be/miniscript/) expressions can now be used in Taproot descriptors for all RPCs working with descriptors. (#27255)
+- [Miniscript](https://bitcoin.sipa.be/miniscript/) expressions can now be used in Taproot descriptors for all RPCs working with descriptors. (#27255)
 
-- `finalizepsbt` is now able to finalize a PSBT with inputs spending [Miniscript](https://fujicoin.sipa.be/miniscript/)-compatible Taproot leaves. (#27255)
+- `finalizepsbt` is now able to finalize a PSBT with inputs spending [Miniscript](https://bitcoin.sipa.be/miniscript/)-compatible Taproot leaves. (#27255)
 
 Changes to wallet related RPCs can be found in the Wallet section below.
 
@@ -103,7 +103,7 @@ New RPCs
   are always checked by hash.
 
   You can find more information on this process in the `assumeutxo` design
-  document (<https://github.com/fujicoin/fujicoin/blob/master/doc/design/assumeutxo.md>).
+  document (<https://github.com/bitcoin/bitcoin/blob/master/doc/design/assumeutxo.md>).
 
   `getchainstates` has been added to aid in monitoring the assumeutxo sync process.
 
@@ -237,7 +237,7 @@ src/fujicoin-cli -named bumpfee txid options='{"fee_rate": 100}'
   is complete) containing the serialized transaction
   suitable for RPC `sendrawtransaction`. (#28414)
 
-- It's now possible to use [Miniscript](https://fujicoin.sipa.be/miniscript/) inside Taproot leaves for descriptor wallets. (#27255)
+- It's now possible to use [Miniscript](https://bitcoin.sipa.be/miniscript/) inside Taproot leaves for descriptor wallets. (#27255)
 
 Descriptors
 -----------
@@ -354,4 +354,4 @@ Thanks to everyone who directly contributed to this release:
 - Yusuf Sahin HAMZA
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

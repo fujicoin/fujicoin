@@ -19,7 +19,7 @@
 #include <iostream>
 
 // There is an inconsistency in BDB on Windows.
-// See: https://github.com/fujicoin/fujicoin/pull/26606#issuecomment-2322763212
+// See: https://github.com/bitcoin/bitcoin/pull/26606#issuecomment-2322763212
 #undef USE_BDB_NON_MSVC
 #if defined(USE_BDB) && !defined(_MSC_VER)
 #define USE_BDB_NON_MSVC
