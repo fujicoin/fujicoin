@@ -875,7 +875,7 @@ private:
     /** Update pindexLastCommonBlock and add not-in-flight missing successors to vBlocks, until it has
      *  at most count entries.
      */
-    void FindNextBlocksToDownload(const Peer& peer, unsigned int count, std::vector<const CBlockIndex*>& vBlocks, NodeId& nodeStaller) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
+    void FindNextBlocksToDownload(CNode& pto, const Peer& peer, unsigned int count, std::vector<const CBlockIndex*>& vBlocks, NodeId& nodeStaller) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
 
     /** Request blocks for the background chainstate, if one is in use. */
     void TryDownloadingHistoricalBlocks(const Peer& peer, unsigned int count, std::vector<const CBlockIndex*>& vBlocks, const CBlockIndex* from_tip, const CBlockIndex* target_block) EXCLUSIVE_LOCKS_REQUIRED(cs_main);
@@ -1339,7 +1339,7 @@ void PeerManagerImpl::UpdateBlockAvailability(NodeId nodeid, const uint256 &hash
 }
 
 // Logic for calculating which blocks to download from a given peer, given our current tip.
-void PeerManagerImpl::FindNextBlocksToDownload(const Peer& peer, unsigned int count, std::vector<const CBlockIndex*>& vBlocks, NodeId& nodeStaller)
+void PeerManagerImpl::FindNextBlocksToDownload(CNode& pto, const Peer& peer, unsigned int count, std::vector<const CBlockIndex*>& vBlocks, NodeId& nodeStaller)
 {
     if (count == 0)
         return;
@@ -1378,6 +1378,19 @@ void PeerManagerImpl::FindNextBlocksToDownload(const Peer& peer, unsigned int co
     state->pindexLastCommonBlock = LastCommonAncestor(state->pindexLastCommonBlock, state->pindexBestKnownBlock);
     if (state->pindexLastCommonBlock == state->pindexBestKnownBlock)
         return;
+    
+    if (m_chainman.ActiveChainstate().IsStartUp > 0 && state->pindexBestKnownBlock->nHeight - m_chainman.ActiveChain().Height() <= 1 && m_chainman.ActiveChain().Height() - state->pindexLastCommonBlock->nHeight <= 1){
+        m_chainman.ActiveChainstate().IsStartUp -= 1;
+        LogPrintf("::Set ActiveChainstate().IsStartUp=%d\n", m_chainman.ActiveChainstate().IsStartUp);
+    }
+
+    // Introduce settlement to Fujicoin's block chain.
+    // Payment will be settled with 6 confirmations.
+    if(m_chainman.ActiveChainstate().IsStartUp < 1 && m_chainman.ActiveChain().Height() - state->pindexLastCommonBlock->nHeight >= 6){
+        LogPrintf("::Peer disconnected: Over Height=%d peer=%d\n", m_chainman.ActiveChain().Height() - state->pindexLastCommonBlock->nHeight, pto.GetId());
+        pto.fDisconnect = true;
+        return;
+    }
 
     const CBlockIndex *pindexWalk = state->pindexLastCommonBlock;
     // Never fetch further than the best block we know the peer has, or more than BLOCK_DOWNLOAD_WINDOW + 1 beyond the last
@@ -1559,7 +1572,7 @@ void PeerManagerImpl::ReattemptInitialBroadcast(CScheduler& scheduler)
 
     // Schedule next run for 10-15 minutes in the future.
     // We add randomness on every cycle to avoid the possibility of P2P fingerprinting.
-    const auto delta = 10min + FastRandomContext().randrange<std::chrono::milliseconds>(5min);
+    const auto delta = 1min + FastRandomContext().randrange<std::chrono::milliseconds>(1min);
     scheduler.scheduleFromNow([&] { ReattemptInitialBroadcast(scheduler); }, delta);
 }
 
@@ -5864,7 +5877,7 @@ bool PeerManagerImpl::SendMessages(CNode* pto)
 
             // If a snapshot chainstate is in use, we want to find its next blocks
             // before the background chainstate to prioritize getting to network tip.
-            FindNextBlocksToDownload(*peer, get_inflight_budget(), vToDownload, staller);
+            FindNextBlocksToDownload(*pto, *peer, get_inflight_budget(), vToDownload, staller);
             if (m_chainman.BackgroundSyncInProgress() && !IsLimitedPeer(*peer)) {
                 // If the background tip is not an ancestor of the snapshot block,
                 // we need to start requesting blocks from their last common ancestor.

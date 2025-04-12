@@ -136,7 +136,7 @@ def download_binary(tag, args) -> int:
         platform = "osx64"
     tarball = 'fujicoin-{tag}-{platform}.tar.gz'.format(
         tag=tag[1:], platform=platform)
-    tarballUrl = 'https://fujicoincore.org/{bin_path}/{tarball}'.format(
+    tarballUrl = 'https://bitcoincore.org/{bin_path}/{tarball}'.format(
         bin_path=bin_path, tarball=tarball)
 
     print('Fetching: {tarballUrl}'.format(tarballUrl=tarballUrl))
@@ -200,7 +200,7 @@ def download_binary(tag, args) -> int:
 
 
 def build_release(tag, args) -> int:
-    githubUrl = "https://github.com/fujicoin/fujicoin"
+    githubUrl = "https://github.com/bitcoin/bitcoin"
     if args.remove_dir:
         if Path(tag).is_dir():
             shutil.rmtree(tag)
