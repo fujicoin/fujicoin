@@ -58,13 +58,13 @@
         <translation type="unfinished">C&amp;hoaz</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ho adresoù Bitcoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ho adresoù Fujicoin evit kas paeamantoù int. Gwirekaat ar sammad hag an adres a resev bewezh a-raok kas gwenneien.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ho adresoù Bitcoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <translation type="unfinished">Ho adresoù Fujicoin evit resev paeamantoù eo. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
     <message>
@@ -132,7 +132,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Internal error</source>
         <translation type="unfinished">Fazi diabarzh</translation>
@@ -192,7 +192,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Sell hollek</translation>
@@ -310,7 +310,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
         <translation type="unfinished">&amp;Diskouel</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -850,7 +850,7 @@ Signing is only possible with addresses of the type 'legacy'.</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>Error creating %s</source>
         <translation type="unfinished">Fazi en ur grouiñ %s</translation>

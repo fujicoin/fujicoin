@@ -54,11 +54,11 @@
         <translation type="unfinished">&amp;Выбрать</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">Це ваші біткоїн-адреси для надсилання платежів. Завжди перевіряйте суму та адресу отримання перед тим, як надсилати монети.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Это ваши биткоин-адреса для приема платежей. Используйте кнопку "Создать новый адрес получения" на вкладке получения, чтобы создать новые адреса.
 Подпись возможна только с адресами типа "устаревший".</translation>
@@ -156,7 +156,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Подтвердите шифрование кошелька</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Предупреждение: Если вы зашифруете кошелёк и потеряете пароль, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОЙНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Назад</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Помните, что шифрование кошелька не может полностью защитить ваши биткоины от кражи вредоносным ПО, заразившим ваш компьютер.</translation>
     </message>
     <message>
@@ -256,7 +256,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Файл настроек %1 повреждён или имеет неверный формат.</translation>
@@ -373,7 +373,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Обзор</translation>
@@ -440,7 +440,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Прокси &lt;b&gt;включён&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Fujicoin address</source>
         <translation type="unfinished">Отправить средства на Биткоин адрес</translation>
     </message>
     <message>
@@ -484,7 +484,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Подписать &amp;сообщение...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
         <translation type="unfinished">Подписать сообщения своими Биткоин кошельками, что-бы доказать, что вы ими владеете</translation>
     </message>
     <message>
@@ -492,7 +492,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Проверить сообщение</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
         <translation type="unfinished">Проверяйте сообщения, чтобы убедиться, что они подписаны конкретными биткоин-адресами</translation>
     </message>
     <message>
@@ -552,8 +552,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Подключение к узлам…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Запросить платёж (генерирует QR-коды и URI протокола bitcoin:)</translation>
+        <source>Request payments (generates QR codes and fujicoin: URIs)</source>
+        <translation type="unfinished">Запросить платёж (генерирует QR-коды и URI протокола fujicoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -608,7 +608,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Синхронизированно</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed Fujicoin Transaction</source>
         <translation type="unfinished">Загрузить частично подписанную биткоин-транзакцию (PSBT)</translation>
     </message>
     <message>
@@ -616,7 +616,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Загрузить PSBT из &amp;буфера обмена…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Fujicoin Transaction from clipboard</source>
         <translation type="unfinished">Загрузить частично подписанную биткоин-транзакцию из буфера обмена</translation>
     </message>
     <message>
@@ -636,8 +636,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Адреса для получения</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Открыть URI протокола bitcoin:</translation>
+        <source>Open a fujicoin: URI</source>
+        <translation type="unfinished">Открыть URI протокола fujicoin:</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -674,7 +674,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Перенос кошелька</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Fujicoin command-line options</source>
         <translation type="unfinished">Показать справку %1 со списком доступных параметров командной строки</translation>
     </message>
     <message>
@@ -734,12 +734,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Показать</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n активное подключение к сети Bitcoin.</numerusform>
-            <numerusform>%n активных подключения к сети Bitcoin.</numerusform>
-            <numerusform>%n активных подключений к сети Bitcoin.</numerusform>
+            <numerusform>%n активное подключение к сети Fujicoin.</numerusform>
+            <numerusform>%n активных подключения к сети Fujicoin.</numerusform>
+            <numerusform>%n активных подключений к сети Fujicoin.</numerusform>
         </translation>
     </message>
     <message>
@@ -1256,7 +1256,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Fujicoin address.</source>
         <translation type="unfinished">Введенный адрес "%1" не является действительным биткоин-адресом.</translation>
     </message>
     <message>
@@ -1343,8 +1343,8 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 скачает и сохранит копию цепочки блоков Bitcoin.</translation>
+        <source>%1 will download and store a copy of the Fujicoin block chain.</source>
+        <translation type="unfinished">%1 скачает и сохранит копию цепочки блоков Fujicoin.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1432,11 +1432,11 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the fujicoin network, as detailed below.</source>
         <translation type="unfinished">Недавние транзакции могут быть пока не видны, и поэтому отображаемый баланс вашего кошелька может быть неточной. Информация станет точной после завершения синхронизации с сетью биткоина. Прогресс синхронизации вы можете видеть снизу.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend fujicoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">Попытка потратить средства, использованные в транзакциях, которые ещё не синхронизированы, будет отклонена сетью.</translation>
     </message>
     <message>
@@ -1487,8 +1487,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation type="unfinished">Открыть URI bitcoin</translation>
+        <source>Open fujicoin URI</source>
+        <translation type="unfinished">Открыть URI fujicoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1591,8 +1591,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Разрешить &amp;входящие соединения</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Подключиться к сети Bitcoin через SOCKS5 прокси.</translation>
+        <source>Connect to the Fujicoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Подключиться к сети Fujicoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1671,8 +1671,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Показывать параметры управления монетами.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Подключаться к сети Bitcoin через отдельный SOCKS5 прокси для скрытых сервисов Tor.</translation>
+        <source>Connect to the Fujicoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Подключаться к сети Fujicoin через отдельный SOCKS5 прокси для скрытых сервисов Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1759,8 +1759,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OverviewPage</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Отображаемая информация может быть устаревшей. Ваш кошелёк автоматически синхронизируется с сетью Bitcoin после подключения, и этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Отображаемая информация может быть устаревшей. Ваш кошелёк автоматически синхронизируется с сетью Fujicoin после подключения, и этот процесс пока не завершён.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1861,8 +1861,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Локальные Адреса</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">Сетевые адреса, которые ваш Bitcoin-узел использует сейчас для связи с другими узлами.</translation>
+        <source>Network addresses that your Fujicoin node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">Сетевые адреса, которые ваш Fujicoin-узел использует сейчас для связи с другими узлами.</translation>
     </message>
     <message>
         <source>Hide Peers Detail</source>
@@ -1964,7 +1964,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive fujicoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Вы можете подписывать сообщения/соглашения своими устаревшими (P2PKH) адресами, чтобы доказать, что вы можете получать биткоины на них. Будьте осторожны и не подписывайте непонятные или случайные сообщения, так как мошенники могут таким образом пытаться присвоить вашу личность. Подписывайте только такие сообщения, с которыми вы согласны вплоть до мелочей.</translation>
     </message>
     <message>
@@ -2177,14 +2177,14 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Разработчики %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s испорчен. Попробуйте восстановить его с помощью инструмента bitcoin-wallet или из резервной копии.</translation>
+        <source>%s corrupt. Try using the wallet tool fujicoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s испорчен. Попробуйте восстановить его с помощью инструмента fujicoin-wallet или из резервной копии.</translation>
     </message>
     <message>
         <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
@@ -2207,7 +2207,7 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">Ошибка: запись идентификатора дамп-файла неверна. Обнаружено "%s", ожидалось "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <source>Error: Dumpfile version is not supported. This version of fujicoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <translation type="unfinished">Ошибка: версия дамп-файла не поддерживается. Эта версия биткоин-кошелька поддерживает только дамп-файлы версии 1. Обнаружен дамп-файл версии %s</translation>
     </message>
     <message>

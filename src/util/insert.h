@@ -1,9 +1,9 @@
-// Copyright (c) 2023 The Bitcoin Core developers
+// Copyright (c) 2023 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_INSERT_H
-#define BITCOIN_UTIL_INSERT_H
+#ifndef FUJICOIN_UTIL_INSERT_H
+#define FUJICOIN_UTIL_INSERT_H
 
 #include <set>
 
@@ -21,4 +21,4 @@ inline void insert(std::set<TsetT>& dst, const Tsrc& src) {
 
 } // namespace util
 
-#endif // BITCOIN_UTIL_INSERT_H
+#endif // FUJICOIN_UTIL_INSERT_H

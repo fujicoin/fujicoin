@@ -1,9 +1,9 @@
-// Copyright (c) 2021-2022 The Bitcoin Core developers
+// Copyright (c) 2021-2022 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_TRANSACTION_H
-#define BITCOIN_WALLET_TRANSACTION_H
+#ifndef FUJICOIN_WALLET_TRANSACTION_H
+#define FUJICOIN_WALLET_TRANSACTION_H
 
 #include <attributes.h>
 #include <consensus/amount.h>
@@ -217,7 +217,7 @@ public:
     unsigned int nTimeSmart;
     /**
      * From me flag is set to 1 for transactions that were created by the wallet
-     * on this bitcoin node, and set to 0 for transactions that were created
+     * on this fujicoin node, and set to 0 for transactions that were created
      * externally and came in through the network or sendrawtransaction RPC.
      */
     bool fFromMe;
@@ -371,4 +371,4 @@ struct WalletTxOrderComparator {
 };
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_TRANSACTION_H
+#endif // FUJICOIN_WALLET_TRANSACTION_H

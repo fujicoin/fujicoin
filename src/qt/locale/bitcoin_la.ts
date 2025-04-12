@@ -49,7 +49,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Summarium</translation>
@@ -91,8 +91,8 @@
         <translation type="unfinished">Creare novum cassidilium</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Mitte nummos ad inscriptionem Bitcoin</translation>
+        <source>Send coins to a Fujicoin address</source>
+        <translation type="unfinished">Mitte nummos ad inscriptionem Fujicoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -115,12 +115,12 @@
         <translation type="unfinished">Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Signa nuntios cum tuis inscriptionibus Bitcoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
+        <translation type="unfinished">Signa nuntios cum tuis inscriptionibus Fujicoin ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
+        <translation type="unfinished">Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Fujicoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -178,11 +178,11 @@
         <translation type="unfinished">&amp;Fenestra</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Fujicoin network.</numerusform>
+            <numerusform>%n active connection(s) to Fujicoin network.</numerusform>
         </translation>
     </message>
     </context>
@@ -324,8 +324,8 @@
         <translation type="unfinished">Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Bitcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Fujicoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -346,8 +346,8 @@
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">Bitcoin incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start fujicoin: click-to-pay handler</source>
+        <translation type="unfinished">Fujicoin incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     <message>
         <source>URI handling</source>

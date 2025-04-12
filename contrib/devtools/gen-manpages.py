@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2022 The Bitcoin Core developers
+# Copyright (c) 2022 The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 import os
@@ -9,12 +9,12 @@ import tempfile
 import argparse
 
 BINARIES = [
-'bin/bitcoind',
-'bin/bitcoin-cli',
-'bin/bitcoin-tx',
-'bin/bitcoin-wallet',
-'bin/bitcoin-util',
-'bin/bitcoin-qt',
+'bin/fujicoind',
+'bin/fujicoin-cli',
+'bin/fujicoin-tx',
+'bin/fujicoin-wallet',
+'bin/fujicoin-util',
+'bin/fujicoin-qt',
 ]
 
 parser = argparse.ArgumentParser(

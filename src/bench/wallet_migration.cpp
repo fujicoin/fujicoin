@@ -1,8 +1,8 @@
-// Copyright (c) 2024 The Bitcoin Core developers
+// Copyright (c) 2024 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or https://www.opensource.org/licenses/mit-license.php.
 
-#include <bitcoin-build-config.h> // IWYU pragma: keep
+#include <fujicoin-build-config.h> // IWYU pragma: keep
 
 #include <bench/bench.h>
 #include <kernel/chain.h>

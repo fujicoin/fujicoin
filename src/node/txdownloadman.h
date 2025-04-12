@@ -1,9 +1,9 @@
-// Copyright (c) 2024 The Bitcoin Core developers
+// Copyright (c) 2024 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NODE_TXDOWNLOADMAN_H
-#define BITCOIN_NODE_TXDOWNLOADMAN_H
+#ifndef FUJICOIN_NODE_TXDOWNLOADMAN_H
+#define FUJICOIN_NODE_TXDOWNLOADMAN_H
 
 #include <net.h>
 #include <policy/packages.h>
@@ -175,4 +175,4 @@ public:
     std::vector<TxOrphanage::OrphanTxBase> GetOrphanTransactions() const;
 };
 } // namespace node
-#endif // BITCOIN_NODE_TXDOWNLOADMAN_H
+#endif // FUJICOIN_NODE_TXDOWNLOADMAN_H

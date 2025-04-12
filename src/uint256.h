@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-present The Bitcoin Core developers
+// Copyright (c) 2009-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UINT256_H
-#define BITCOIN_UINT256_H
+#ifndef FUJICOIN_UINT256_H
+#define FUJICOIN_UINT256_H
 
 #include <crypto/common.h>
 #include <span.h>
@@ -210,4 +210,4 @@ public:
     static const uint256 ONE;
 };
 
-#endif // BITCOIN_UINT256_H
+#endif // FUJICOIN_UINT256_H

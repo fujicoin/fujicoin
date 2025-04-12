@@ -58,11 +58,11 @@
         <translation type="unfinished">خوښول</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">دا ستاسو د Bitcoin پتې دي د تادیاتو لپاره. تل د سکې لیږلو مخکې اندازه او د ترلاسه کوونکي پته وګورئ.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">دا ستاسو د Fujicoin پتې دي د تادیاتو لپاره. تل د سکې لیږلو مخکې اندازه او د ترلاسه کوونکي پته وګورئ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">دا ستاسو د بټکوین پته ده د تادیاتو ترلاسه کولو لپاره. د 'نوې ترلاسه کولو پته جوړه کړئ' تڼۍ په ترلاسه کولو ټب کې وکاروئ ترڅو نوي پته جوړ کړئ.
 لاسلیک یوازې د 'لیګسي' ډول پتو سره ممکن دی.</translation>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">د والټ کوډ کول تایید کړئ</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
         <translation type="unfinished">خبرتیا: که تاسې خپل والټ کوډ کړئ او خپلپاسفریز، ته به یې. &lt;b&gt;خپل ټول بټ کوینونه له لاسه ورکړئ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -192,7 +192,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">بېرته</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">یاد ولرئ چې ستاسو د والټ رمز جوړول بشپړ ساتنه نه شي کولای.ستاسو بټ کوینونه د مالویر له لارې د غلا څخه خوندي کول
  ستاسو کمپیوټ</translation>
     </message>
@@ -265,7 +265,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">د ترتیبونو فایل %1 کیږي چې فاسد یا ناسم وي.</translation>
@@ -355,7 +355,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;کتنه</translation>
@@ -422,7 +422,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">پروکسي دی &lt;b&gt;فعال&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Fujicoin address</source>
         <translation type="unfinished">سکې د بټ کوین پته ته واستوئ</translation>
     </message>
     <message>
@@ -466,7 +466,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">لاسلیک او پیغام…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
         <translation type="unfinished">د خپلو بټ کوین پتې سره پیغامونه لاسلیک کړئ ترڅو دا ثابت کړئ چې تاسو یې لرئ</translation>
     </message>
     <message>
@@ -474,7 +474,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;پیغام تایید کړئ…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
         <translation type="unfinished">پیغامونه تصدیق کړئ ترڅو ډاډ ترلاسه کړئ چې دوی د ټاکل شوو بټ کوین پته سره لاسلیک شوي دي</translation>
     </message>
     <message>
@@ -534,7 +534,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">د همکارانو سره نښلول…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
+        <source>Request payments (generates QR codes and fujicoin: URIs)</source>
         <translation type="unfinished">د تادیاتو غوښتنه کول (QR کوډونه او بټ کوین: URI جوړوي</translation>
     </message>
     <message>
@@ -593,7 +593,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">کنټرول + Q</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed Fujicoin Transaction</source>
         <translation type="unfinished">جزوي لاسلیک شوی بټ کوین معامله پورته کړئ</translation>
     </message>
     <message>
@@ -601,7 +601,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">PSBT له &amp; څخه بار کړئ</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Fujicoin Transaction from clipboard</source>
         <translation type="unfinished">د کلیپ بورډ څخه نیمګړی لاسلیک شوی بټ کوین معامله پورته کړئ</translation>
     </message>
     <message>
@@ -621,7 +621,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">او د ترلاسه کولو پته</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a fujicoin: URI</source>
         <translation type="unfinished">یو بټ کوین: URI پرانیزئ</translation>
     </message>
     <message>
@@ -659,7 +659,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">والټ لېږدول</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Fujicoin command-line options</source>
         <translation type="unfinished">%1 مرسته پیغام وښایه ترڅو د ممکنه بټ کوین کمانډ لاین اختیارونو سره لیست ترلاسه کړئ"</translation>
     </message>
     <message>
@@ -723,7 +723,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">"ښودل</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />
@@ -1245,7 +1245,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">د لېږلو پته سمول</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Fujicoin address.</source>
         <translation type="unfinished">د داخل شوي پته "%1"دا د بټ کوین صحيح پته نه ده</translation>
     </message>
     <message>
@@ -1291,7 +1291,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Fujicoin</source>
         <translation type="unfinished">ٹ کوائن</translation>
     </message>
     <message numerus="yes">
@@ -1336,7 +1336,7 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Fujicoin block chain.</source>
         <translation type="unfinished">به د بیتکوین بلاک چین کاپي ډاونلوډ کړي او ذخیره کړي.%1</translation>
     </message>
     <message>
@@ -1481,7 +1481,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open fujicoin URI</source>
         <translation type="unfinished">بټ کوین URI پرانیزئ</translation>
     </message>
     <message>

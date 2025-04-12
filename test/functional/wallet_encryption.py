@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2022 The Bitcoin Core developers
+# Copyright (c) 2016-2022 The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test Wallet encryption"""
@@ -8,7 +8,7 @@ import time
 import subprocess
 
 from test_framework.messages import hash256
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import FujicoinTestFramework
 from test_framework.util import (
     assert_raises_rpc_error,
     assert_equal,
@@ -16,7 +16,7 @@ from test_framework.util import (
 from test_framework.wallet_util import WalletUnlock
 
 
-class WalletEncryptionTest(BitcoinTestFramework):
+class WalletEncryptionTest(FujicoinTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 
@@ -112,7 +112,7 @@ class WalletEncryptionTest(BitcoinTestFramework):
 
             def do_wallet_tool(*args):
                 proc = subprocess.Popen(
-                    [self.options.bitcoinwallet, f"-datadir={self.nodes[0].datadir_path}", f"-chain={self.chain}"] + list(args),
+                    [self.options.fujicoinwallet, f"-datadir={self.nodes[0].datadir_path}", f"-chain={self.chain}"] + list(args),
                     stdin=subprocess.PIPE,
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,

@@ -1,9 +1,9 @@
-// Copyright (c) 2024-present The Bitcoin Core developers
+// Copyright (c) 2024-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_FUZZ_UTIL_WALLET_H
-#define BITCOIN_TEST_FUZZ_UTIL_WALLET_H
+#ifndef FUJICOIN_TEST_FUZZ_UTIL_WALLET_H
+#define FUJICOIN_TEST_FUZZ_UTIL_WALLET_H
 
 #include <test/fuzz/FuzzedDataProvider.h>
 #include <test/fuzz/fuzz.h>
@@ -131,4 +131,4 @@ struct FuzzedWallet {
 };
 }
 
-#endif // BITCOIN_TEST_FUZZ_UTIL_WALLET_H
+#endif // FUJICOIN_TEST_FUZZ_UTIL_WALLET_H

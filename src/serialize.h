@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2022 The Bitcoin Core developers
+// Copyright (c) 2009-2022 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SERIALIZE_H
-#define BITCOIN_SERIALIZE_H
+#ifndef FUJICOIN_SERIALIZE_H
+#define FUJICOIN_SERIALIZE_H
 
 #include <attributes.h>
 #include <compat/assumptions.h> // IWYU pragma: keep
@@ -1229,4 +1229,4 @@ public:
         return ParamsWrapper{*this, t};                                                  \
     }
 
-#endif // BITCOIN_SERIALIZE_H
+#endif // FUJICOIN_SERIALIZE_H

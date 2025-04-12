@@ -54,13 +54,13 @@
         <translation type="unfinished">選擇 (&amp;h)</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">這些是你要發送過去的 比特幣地址。在發送幣之前，務必要檢查金額和接收地址是否正確。</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">這些是你要發送過去的 富士幣地址。在發送幣之前，務必要檢查金額和接收地址是否正確。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">這些是您的比特幣接收地址。使用“接收”標籤中的“產生新的接收地址”按鈕產生新的地址。只能使用“傳統”類型的地址進行簽名。</translation>
+        <translation type="unfinished">這些是您的富士幣接收地址。使用“接收”標籤中的“產生新的接收地址”按鈕產生新的地址。只能使用“傳統”類型的地址進行簽名。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -159,8 +159,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">確認錢包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Bitcoin 了&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Fujicoin 了&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -187,7 +187,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">返回</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">請記得, 即使將錢包加密, 也不能完全防止因惡意軟體入侵, 而導致位元幣被偷.</translation>
     </message>
     <message>
@@ -259,7 +259,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">設定檔%1可能已經失效或無效</translation>
@@ -322,8 +322,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">金額</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">輸入 比特幣地址 (比如說 %1)</translation>
+        <source>Enter a Fujicoin address (e.g. %1)</source>
+        <translation type="unfinished">輸入 富士幣地址 (比如說 %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -450,7 +450,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;總覽</translation>
@@ -513,8 +513,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">代理伺服器&lt;b&gt;已經啟用&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">發送幣給一個比特幣地址</translation>
+        <source>Send coins to a Fujicoin address</source>
+        <translation type="unfinished">發送幣給一個富士幣地址</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -549,12 +549,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">修改密码(&amp;C)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">用比特幣地址簽名訊息來證明位址是你的</translation>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
+        <translation type="unfinished">用富士幣地址簽名訊息來證明位址是你的</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">驗證訊息是用來確定訊息是用指定的比特幣地址簽名的</translation>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
+        <translation type="unfinished">驗證訊息是用來確定訊息是用指定的富士幣地址簽名的</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -601,8 +601,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">连到同行...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">要求付款(產生 QR Code 和 bitcoin 付款協議的資源識別碼: URI)</translation>
+        <source>Request payments (generates QR codes and fujicoin: URIs)</source>
+        <translation type="unfinished">要求付款(產生 QR Code 和 fujicoin 付款協議的資源識別碼: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -655,16 +655,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">最新狀態</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">載入部分簽名的比特幣交易</translation>
+        <source>Load Partially Signed Fujicoin Transaction</source>
+        <translation type="unfinished">載入部分簽名的富士幣交易</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">從剪貼簿載入PSBT</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">從剪貼簿載入部分簽名的比特幣交易</translation>
+        <source>Load Partially Signed Fujicoin Transaction from clipboard</source>
+        <translation type="unfinished">從剪貼簿載入部分簽名的富士幣交易</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -683,8 +683,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;接收地址</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">打開一個比特幣：URI</translation>
+        <source>Open a fujicoin: URI</source>
+        <translation type="unfinished">打開一個富士幣：URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -721,7 +721,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">遷移一個錢包</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Fujicoin command-line options</source>
         <translation type="unfinished">顯示 %1 的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -781,7 +781,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;顯示</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>已處理%n個區塊的交易歷史。</numerusform>
@@ -1271,8 +1271,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">編輯發送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">輸入的地址 %1 並不是有效的比特幣地址。</translation>
+        <source>The entered address "%1" is not a valid Fujicoin address.</source>
+        <translation type="unfinished">輸入的地址 %1 並不是有效的富士幣地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book with label "%2".</source>
@@ -1350,8 +1350,8 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 會下載 Bitcoin 區塊鏈並且儲存一份副本。</translation>
+        <source>%1 will download and store a copy of the Fujicoin block chain.</source>
+        <translation type="unfinished">%1 會下載 Fujicoin 區塊鏈並且儲存一份副本。</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1439,12 +1439,12 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">表單</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 bitcoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the fujicoin network, as detailed below.</source>
+        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 fujicoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 bitcoin 可能會不被網路所接受。</translation>
+        <source>Attempting to spend fujicoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 fujicoin 可能會不被網路所接受。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1494,8 +1494,8 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation type="unfinished">打開比特幣URI</translation>
+        <source>Open fujicoin URI</source>
+        <translation type="unfinished">打開富士幣URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1543,8 +1543,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">與%1相容的腳本檔案路徑（例如 C:\Downloads\hwi.exe 或者 /Users/you/Downloads/hwi.py ）。注意：惡意軟體可以偷幣！</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">自动在路由器上打开比特币客户端端口。仅当您的路由器支持PCP或NAT-PMP并且已启用时才有效。外部端口可能是随机的。</translation>
+        <source>Automatically open the Fujicoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">自动在路由器上打开富士币客户端端口。仅当您的路由器支持PCP或NAT-PMP并且已启用时才有效。外部端口可能是随机的。</translation>
     </message>
     <message>
         <source>Map port using PCP or NA&amp;T-PMP</source>
@@ -1678,8 +1678,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">接受外來連線(&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 Bitcoin 網路。</translation>
+        <source>Connect to the Fujicoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 Fujicoin 網路。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1758,8 +1758,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">是否要顯示錢幣控制功能。</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">通過用於Tor洋蔥服務個別的SOCKS5代理連接到比特幣網路。</translation>
+        <source>Connect to the Fujicoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">通過用於Tor洋蔥服務個別的SOCKS5代理連接到富士幣網路。</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1855,8 +1855,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">表單</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">顯示的資訊可能是過期的。跟 Bitcoin 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">顯示的資訊可能是過期的。跟 Fujicoin 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2046,16 +2046,16 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation type="unfinished">沒辦法啟動 bitcoin 協議的「按就付」處理器</translation>
+        <source>Cannot start fujicoin: click-to-pay handler</source>
+        <translation type="unfinished">沒辦法啟動 fujicoin 協議的「按就付」處理器</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI 處理</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">字首為 bitcoin:// 不是有效的 URI，請改用 bitcoin: 開頭。</translation>
+        <source>'fujicoin://' is not a valid URI. Use 'fujicoin:' instead.</source>
+        <translation type="unfinished">字首為 fujicoin:// 不是有效的 URI，請改用 fujicoin: 開頭。</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2066,8 +2066,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
 如果您看到了這個錯誤，您應該要求商家提供與BIP21相容的URI。</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">沒辦法解析 URI ！可能是因為無效比特幣地址，或是 URI 參數格式錯誤。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Fujicoin address or malformed URI parameters.</source>
+        <translation type="unfinished">沒辦法解析 URI ！可能是因為無效富士幣地址，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2224,8 +2224,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">本地地址</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">您的比特币节点正在使用网络地址与其他节点联系。</translation>
+        <source>Network addresses that your Fujicoin node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">您的富士币节点正在使用网络地址与其他节点联系。</translation>
     </message>
     <message>
         <source>Block chain</source>
@@ -2675,8 +2675,8 @@ For more information on using this console, type %6.
         <translation type="unfinished">訊息(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 Bitcoin 網路上。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fujicoin network.</source>
+        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 Fujicoin 網路上。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2976,8 +2976,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 注意：由於手續費是按每字節計算的，對於虛擬大小為500字節（半千字節）的交易，手續費率為「每千字節100聰」，最終將只收取50聰的手續費。</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation type="unfinished">當交易量小於可用區塊空間時，礦工和節點可能會執行最低手續費率限制。 以這個最低費率來支付手續費也是可以的，但請注意，一旦交易需求超出比特幣網路能處理的限度，你的交易可能永遠無法確認。</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for fujicoin transactions than the network can process.</source>
+        <translation type="unfinished">當交易量小於可用區塊空間時，礦工和節點可能會執行最低手續費率限制。 以這個最低費率來支付手續費也是可以的，但請注意，一旦交易需求超出富士幣網路能處理的限度，你的交易可能永遠無法確認。</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3062,8 +3062,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Cr＆eate未簽名</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">產生一個部分簽名的比特幣交易（PSBT）以用於例如離線%1錢包或與PSBT相容的硬體錢包。</translation>
+        <source>Creates a Partially Signed Fujicoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">產生一個部分簽名的富士幣交易（PSBT）以用於例如離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -3118,9 +3118,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">你可以之後再提高手續費(有 BIP-125 手續費追加的標記)</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Fujicoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
+        <translation type="unfinished">請檢查您的交易提案。這將產生部分簽名的富士幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
     <message>
         <source>%1 from wallet '%2'</source>
@@ -3132,9 +3132,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">要創建這筆交易嗎？</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Fujicoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">請務必仔細檢查您的交易。 你可以創建並發送這筆交易；也可以創建一個“部分簽名比特幣交易(PSBT)”，它可以被保存下來或被複製出去，然後就可以對它進行簽名，比如用離線%1錢包，或 是用相容PSBT的硬體錢包。</translation>
+        <translation type="unfinished">請務必仔細檢查您的交易。 你可以創建並發送這筆交易；也可以創建一個“部分簽名富士幣交易(PSBT)”，它可以被保存下來或被複製出去，然後就可以對它進行簽名，比如用離線%1錢包，或 是用相容PSBT的硬體錢包。</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3210,8 +3210,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">警告: 比特幣地址無效</translation>
+        <source>Warning: Invalid Fujicoin address</source>
+        <translation type="unfinished">警告: 富士幣地址無效</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3249,8 +3249,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">選擇先前使用過的地址</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">將支付發送到的比特幣地址給</translation>
+        <source>The Fujicoin address to send the payment to</source>
+        <translation type="unfinished">將支付發送到的富士幣地址給</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3265,8 +3265,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">以所選單位發送的金額</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 bitcoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less fujicoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 fujicoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3285,8 +3285,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">請輸入這個地址的標籤，來把它加進去已使用過地址清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">附加在 Bitcoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Bitcoin 網路上。</translation>
+        <source>A message that was attached to the fujicoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fujicoin network.</source>
+        <translation type="unfinished">附加在 Fujicoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Fujicoin 網路上。</translation>
     </message>
 </context>
 <context>
@@ -3311,8 +3311,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">簽署訊息(&amp;S)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">用來簽名訊息的 比特幣地址</translation>
+        <source>The Fujicoin address to sign the message with</source>
+        <translation type="unfinished">用來簽名訊息的 富士幣地址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3335,8 +3335,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">複製目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">簽名這個訊息來證明這個比特幣地址是你的</translation>
+        <source>Sign the message to prove you own this Fujicoin address</source>
+        <translation type="unfinished">簽名這個訊息來證明這個富士幣地址是你的</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3359,8 +3359,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">請在下面輸入收款人的地址，訊息(請確定完整複製了所包含的換行、空格、tabs...等)，以及簽名，來驗證這個訊息。請小心，除了訊息內容以外，不要對簽名本身過度解讀，以避免被用「中間人攻擊法」詐騙。請注意，通過驗證的簽名只能證明簽名人確實可以從該地址收款，不能證明任何交易中的付款人身份！</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">簽名這個訊息的 比特幣地址</translation>
+        <source>The Fujicoin address the message was signed with</source>
+        <translation type="unfinished">簽名這個訊息的 富士幣地址</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3371,8 +3371,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">簽名訊息時給出的簽名</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">驗證這個訊息來確定是用指定的比特幣地址簽名的</translation>
+        <source>Verify the message to ensure it was signed with the specified Fujicoin address</source>
+        <translation type="unfinished">驗證這個訊息來確定是用指定的富士幣地址簽名的</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4027,14 +4027,14 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 開發人員</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s損壞。嘗試使用錢包工具bitcoin-wallet挽救或還原備份。</translation>
+        <source>%s corrupt. Try using the wallet tool fujicoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s損壞。嘗試使用錢包工具fujicoin-wallet挽救或還原備份。</translation>
     </message>
     <message>
         <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
@@ -4081,8 +4081,8 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">錯誤: 轉存檔案識別記錄不正確。獲得 '%s'，預期 '%s'。</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">錯誤: 轉儲文件版本不支援。 這個版本的 bitcoin-wallet 只支援版本為 1 的轉儲檔案。 得到的轉儲文件版本是%s</translation>
+        <source>Error: Dumpfile version is not supported. This version of fujicoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">錯誤: 轉儲文件版本不支援。 這個版本的 fujicoin-wallet 只支援版本為 1 的轉儲檔案。 得到的轉儲文件版本是%s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>

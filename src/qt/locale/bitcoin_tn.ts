@@ -58,13 +58,13 @@
         <translation type="unfinished">Kgetha</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Tseno ke diakgokaganyo tsa gago tsa Bitcoin tsa go romela ditefello. Nna o lekepe go lebelela palo le aterese ya go amogela pele ga go romela dikhono.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Tseno ke diakgokaganyo tsa gago tsa Fujicoin tsa go romela ditefello. Nna o lekepe go lebelela palo le aterese ya go amogela pele ga go romela dikhono.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ete ke diaterese tsa gago tsa Bitcoin tsa go amogela ditefello. Dirisa boto ya 'Bua aterese e ntšha ya go amogela' mo tabeng ya go amogela go tlhama diaterese tse ntšha. Fa go sa tiiseng go ka dirwa fela ka diaterese tsa mofuta wa 'legacy'.</translation>
+        <translation type="unfinished">Ete ke diaterese tsa gago tsa Fujicoin tsa go amogela ditefello. Dirisa boto ya 'Bua aterese e ntšha ya go amogela' mo tabeng ya go amogela go tlhama diaterese tse ntšha. Fa go sa tiiseng go ka dirwa fela ka diaterese tsa mofuta wa 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Netefatsa go phuthela setlhotlha</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Tlhokomeliso: Fa o tsenya wallet ya gago ka go enkripita le go latlhegelwa ke passphrase ya gago, o tla &lt;b&gt;Losa Bitcoin yotlhe tsa gago&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Tlhokomeliso: Fa o tsenya wallet ya gago ka go enkripita le go latlhegelwa ke passphrase ya gago, o tla &lt;b&gt;Losa Fujicoin yotlhe tsa gago&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -191,8 +191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Boa</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Gakologelwang gore go tlhabolola wallet ya gago ga go kgone go tshireletsa bitcoins tsa gago ka botlalo go tswa go go robelwa ke malware e e golangweng mo khomphutheng ya gago.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Gakologelwang gore go tlhabolola wallet ya gago ga go kgone go tshireletsa fujicoins tsa gago ka botlalo go tswa go go robelwa ke malware e e golangweng mo khomphutheng ya gago.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -261,7 +261,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -270,7 +270,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

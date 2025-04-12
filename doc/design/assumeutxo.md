@@ -5,8 +5,8 @@ For notes on the usage of Assumeutxo, please refer to [the usage doc](/doc/assum
 ## General background
 
 - [assumeutxo proposal](https://github.com/jamesob/assumeutxo-docs/tree/2019-04-proposal/proposal)
-- [Github issue](https://github.com/bitcoin/bitcoin/issues/15605)
-- [draft PR](https://github.com/bitcoin/bitcoin/pull/15606)
+- [Github issue](https://github.com/fujicoin/fujicoin/issues/15605)
+- [draft PR](https://github.com/fujicoin/fujicoin/pull/15606)
 
 ## Design notes
 
@@ -39,7 +39,7 @@ data.
 
 `ChainstateManager` manages a single Chainstate object, for which
 `m_from_snapshot_blockhash` is `std::nullopt`. This chainstate is (maybe obviously)
-considered active. This is the "traditional" mode of operation for bitcoind.
+considered active. This is the "traditional" mode of operation for fujicoind.
 
 |    |    |
 | ---------- | ----------- |
@@ -109,7 +109,7 @@ background chainstate's UTXO set contents and ensure it matches the compiled val
 
 The background chainstate data lingers on disk until the program is restarted.
 
-### Bitcoind restarts sometime after snapshot validation has completed
+### Fujicoind restarts sometime after snapshot validation has completed
 
 After a shutdown and subsequent restart, `LoadChainstate()` cleans up the background
 chainstate with `ValidatedSnapshotCleanup()`, which renames the `chainstate_snapshot`

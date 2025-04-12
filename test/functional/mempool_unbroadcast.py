@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017-2022 The Bitcoin Core developers
+# Copyright (c) 2017-2022 The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test that the mempool ensures transaction delivery by periodically sending
 to peers until a GETDATA is received."""
 
 from test_framework.p2p import P2PTxInvStore
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import FujicoinTestFramework
 from test_framework.util import (
     assert_equal,
     ensure_for,
@@ -15,7 +15,7 @@ from test_framework.wallet import MiniWallet
 
 MAX_INITIAL_BROADCAST_DELAY = 15 * 60 # 15 minutes in seconds
 
-class MempoolUnbroadcastTest(BitcoinTestFramework):
+class MempoolUnbroadcastTest(FujicoinTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

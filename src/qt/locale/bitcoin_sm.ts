@@ -58,13 +58,13 @@
         <translation type="unfinished">fi&amp;lifili</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">O nei o au tuatusi Bitcoin mo le auina atu o totogi. Ia e siaki pea le aofa'i ma le tuatusi e talia ai tupe a'o le'i lafoina atu tupe.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">O nei o au tuatusi Fujicoin mo le auina atu o totogi. Ia e siaki pea le aofa'i ma le tuatusi e talia ai tupe a'o le'i lafoina atu tupe.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">O nei o au tuatusi Bitcoin mo le talia o totogi. Fa'aaoga le fa'amau 'Fausia se tuatusi fou mo le talia' i le fa'amau talia e fa'atupu ai ni tuatusi fou. E mafai ona sainia na'o tuatusi o le ituaiga 'legacy'.</translation>
+        <translation type="unfinished">O nei o au tuatusi Fujicoin mo le talia o totogi. Fa'aaoga le fa'amau 'Fausia se tuatusi fou mo le talia' i le fa'amau talia e fa'atupu ai ni tuatusi fou. E mafai ona sainia na'o tuatusi o le ituaiga 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tautuaina le faʻamaufaʻailoa o le 'wallet'</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Fa'amaoniga: Afai e te fa'amaonia lau 'aofa'i ma le leiloa o lau fa'amaoniga, o le a &lt;b&gt;Losi uma au Bitcoinsi&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Fa'amaoniga: Afai e te fa'amaonia lau 'aofa'i ma le leiloa o lau fa'amaoniga, o le a &lt;b&gt;Losi uma au Fujicoinsi&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -191,8 +191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">I tua</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau bitcoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Manatua o le fa'amaonia o lau atigipusa e le mafai ona puipuia lelei lau fujicoins mai le fa'ama'i o malware o lo'o fa'ama'i i lau komepiuta.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -259,7 +259,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Atigi fa'amaoniga %1 atonu e fa'aletonu po'o le le sa'o.</translation>
@@ -371,7 +371,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Laupapa o le Fa'amaoniga</translation>
@@ -438,8 +438,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">O le tagata fa'amaonia o &lt;b&gt;fa'atufugaga&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Fa'amaimau fa'amaoniga i se tuatusi Bitcoin</translation>
+        <source>Send coins to a Fujicoin address</source>
+        <translation type="unfinished">Fa'amaimau fa'amaoniga i se tuatusi Fujicoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -482,16 +482,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Saini &amp; feʻau...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Saini feʻau i au tuatusi Bitcoin e fa'amaonia ai o oe e ona</translation>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
+        <translation type="unfinished">Saini feʻau i au tuatusi Fujicoin e fa'amaonia ai o oe e ona</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Fa'amaonia le mesēga…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Fa'amaonia manatu e fa'amaonia ai na'o le 'alelesi fa'amaonia i tuatusi Bitcoin fa'amaonia</translation>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
+        <translation type="unfinished">Fa'amaonia manatu e fa'amaonia ai na'o le 'alelesi fa'amaonia i tuatusi Fujicoin fa'amaonia</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -550,8 +550,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Faʻatasi ma uō…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Talosaga mo totogi (faʻatupuina ni QR code ma bitcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and fujicoin: URIs)</source>
+        <translation type="unfinished">Talosaga mo totogi (faʻatupuina ni QR code ma fujicoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -606,16 +606,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">I le taimi nei</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Laʻu le Galuega Fa'amaonia Bitcoin i le vaega</translation>
+        <source>Load Partially Signed Fujicoin Transaction</source>
+        <translation type="unfinished">Laʻu le Galuega Fa'amaonia Fujicoin i le vaega</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Loli PSBT mai le &amp;clipboard…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">La'uina le Galuega Bitcoin na'o le vaega o lo'o sainia mai le pepa kopi</translation>
+        <source>Load Partially Signed Fujicoin Transaction from clipboard</source>
+        <translation type="unfinished">La'uina le Galuega Fujicoin na'o le vaega o lo'o sainia mai le pepa kopi</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -634,8 +634,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Tuuina atu i le tuatusi</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Tuuina se bitcoin: URI</translation>
+        <source>Open a fujicoin: URI</source>
+        <translation type="unfinished">Tuuina se fujicoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -672,8 +672,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Maua se 'u'iga o se taga tupe</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Fa'aalia le %1 fe'au fesoasoani e maua ai se lisi ma avanoa o pologa laina fa'atonu Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible Fujicoin command-line options</source>
+        <translation type="unfinished">Fa'aalia le %1 fe'au fesoasoani e maua ai se lisi ma avanoa o pologa laina fa'atonu Fujicoin</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -732,10 +732,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Fa'&amp;aali</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n fesoʻotaʻiga fa'amaonia i le upega tafa'ilagi o Bitcoin.</numerusform>
+            <numerusform>%n fesoʻotaʻiga fa'amaonia i le upega tafa'ilagi o Fujicoin.</numerusform>
             <numerusform />
             <numerusform />
         </translation>
@@ -1253,8 +1253,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">Fa'amaonia le tu'uina o le tuatusi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">O le "adresi" na tuʻufaʻatasia "%1" e le o se adresi Bitcoin talafeagai.</translation>
+        <source>The entered address "%1" is not a valid Fujicoin address.</source>
+        <translation type="unfinished">O le "adresi" na tuʻufaʻatasia "%1" e le o se adresi Fujicoin talafeagai.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1344,8 +1344,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">O le %1 o le a tusia ma teuina se kopi o le Bitcoin block chain.</translation>
+        <source>%1 will download and store a copy of the Fujicoin block chain.</source>
+        <translation type="unfinished">O le %1 o le a tusia ma teuina se kopi o le Fujicoin block chain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1433,12 +1433,12 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">Fomu</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">E mafai e fefaʻatauaiga lata mai ona le mafai ona vaʻaia, ma o le mea lea, atonu e le tusa ai le tamaʻi palani o lau 'wallet'. O lenei fa'amaoniga o le a sa'o pe a mae'a ona fa'atufugaga lau 'wallet' ma le upega tafaʻilagi o le bitcoin, e pei o fa'amaoniga i lalo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the fujicoin network, as detailed below.</source>
+        <translation type="unfinished">E mafai e fefaʻatauaiga lata mai ona le mafai ona vaʻaia, ma o le mea lea, atonu e le tusa ai le tamaʻi palani o lau 'wallet'. O lenei fa'amaoniga o le a sa'o pe a mae'a ona fa'atufugaga lau 'wallet' ma le upega tafaʻilagi o le fujicoin, e pei o fa'amaoniga i lalo.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">O le taumafaiga e fa'aaoga bitcoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
+        <source>Attempting to spend fujicoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">O le taumafaiga e fa'aaoga fujicoins e a'afia i le fa'amaoniga e le'i fa'aalia o le a le taliaina e le upega.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1488,8 +1488,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
-        <translation type="unfinished">Tatala le URI o le Bitcoin</translation>
+        <source>Open fujicoin URI</source>
+        <translation type="unfinished">Tatala le URI o le Fujicoin</translation>
     </message>
     <message>
         <source>URI:</source>
@@ -1659,8 +1659,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">Fa'amaonia feso'ota'i&amp;ga o lo'o sau</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Sii i luga i le upega tafaʻilagi o Bitcoin i le ala o le SOCKS5 proxy.</translation>
+        <source>Connect to the Fujicoin network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Sii i luga i le upega tafaʻilagi o Fujicoin i le ala o le SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1739,8 +1739,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">Faʻavae i luga pe faʻaalia pe le faʻaalia le faʻagaioiga o le pulea o koina.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Sopọ i le netiweke Bitcoin i se faʻaogaina SOCKS5 ese mo auaunaga Tor onion.</translation>
+        <source>Connect to the Fujicoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Sopọ i le netiweke Fujicoin i se faʻaogaina SOCKS5 ese mo auaunaga Tor onion.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1832,8 +1832,8 @@ O le fa'amaoniga o le malaga o le a fai se kopi o le 'aofa'i a'o le'i fa'aauau l
         <translation type="unfinished">Fomu</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">O faʻamatalaga o loʻo faʻaalia atonu e le o toe faʻafouina. E otometi lava ona faʻatulagaina lau ʻato tupe i le upega Bitcoin pe a maeʻa ona fesoʻotaʻi, ae e leʻi maeʻa lenei faiga.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">O faʻamatalaga o loʻo faʻaalia atonu e le o toe faʻafouina. E otometi lava ona faʻatulagaina lau ʻato tupe i le upega Fujicoin pe a maeʻa ona fesoʻotaʻi, ae e leʻi maeʻa lenei faiga.</translation>
     </message>
     <message>
         <source>Watch-only:</source>

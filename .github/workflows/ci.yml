@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present The Bitcoin Core developers
+# Copyright (c) 2023-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ jobs:
         if: matrix.job-type == 'standard'
         working-directory: build
         env:
-          BITCOIND: '${{ github.workspace }}\build\bin\Release\bitcoind.exe'
-          BITCOINCLI: '${{ github.workspace }}\build\bin\Release\bitcoin-cli.exe'
-          BITCOINUTIL: '${{ github.workspace }}\build\bin\Release\bitcoin-util.exe'
-          BITCOINWALLET: '${{ github.workspace }}\build\bin\Release\bitcoin-wallet.exe'
+          FUJICOIND: '${{ github.workspace }}\build\bin\Release\fujicoind.exe'
+          FUJICOINCLI: '${{ github.workspace }}\build\bin\Release\fujicoin-cli.exe'
+          FUJICOINUTIL: '${{ github.workspace }}\build\bin\Release\fujicoin-util.exe'
+          FUJICOINWALLET: '${{ github.workspace }}\build\bin\Release\fujicoin-wallet.exe'
           TEST_RUNNER_EXTRA: ${{ github.event_name != 'pull_request' && '--extended' || '' }}
         shell: cmd
         run: py -3 test\functional\test_runner.py --jobs %NUMBER_OF_PROCESSORS% --ci --quiet --tmpdirprefix=%RUNNER_TEMP% --combinedlogslen=99999999 --timeout-factor=%TEST_RUNNER_TIMEOUT_FACTOR% %TEST_RUNNER_EXTRA%
@@ -249,7 +249,7 @@ jobs:
       - name: Clone corpora
         if: matrix.job-type == 'fuzz'
         run: |
-          git clone --depth=1 https://github.com/bitcoin-core/qa-assets "$env:RUNNER_TEMP\qa-assets"
+          git clone --depth=1 https://github.com/fujicoin-core/qa-assets "$env:RUNNER_TEMP\qa-assets"
           Set-Location "$env:RUNNER_TEMP\qa-assets"
           Write-Host "Using qa-assets repo from commit ..."
           git log -1
@@ -258,7 +258,7 @@ jobs:
         if: matrix.job-type == 'fuzz'
         working-directory: build
         env:
-          BITCOINFUZZ: '${{ github.workspace }}\build\bin\Release\fuzz.exe'
+          FUJICOINFUZZ: '${{ github.workspace }}\build\bin\Release\fuzz.exe'
         shell: cmd
         run: |
           py -3 test\fuzz\test_runner.py --par %NUMBER_OF_PROCESSORS% --loglevel DEBUG %RUNNER_TEMP%\qa-assets\fuzz_corpora

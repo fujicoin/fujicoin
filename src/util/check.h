@@ -1,9 +1,9 @@
-// Copyright (c) 2019-2022 The Bitcoin Core developers
+// Copyright (c) 2019-2022 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_CHECK_H
-#define BITCOIN_UTIL_CHECK_H
+#ifndef FUJICOIN_UTIL_CHECK_H
+#define FUJICOIN_UTIL_CHECK_H
 
 #include <attributes.h>
 
@@ -105,4 +105,4 @@ constexpr T&& inline_assertion_check(LIFETIMEBOUND T&& val, [[maybe_unused]] con
 
 // NOLINTEND(bugprone-lambda-function-name)
 
-#endif // BITCOIN_UTIL_CHECK_H
+#endif // FUJICOIN_UTIL_CHECK_H

@@ -58,11 +58,11 @@
         <translation type="unfinished">चयनय</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">एते तव बिटकॉइन पताक्षेत्राणि प्रेषणाय। नाणकानि प्रेषयणस्य पूर्वं सदैव राशिं च प्राप्तिपताक्षेत्रं च परीक्षणं कुर्वीत।</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">एते तव बिटकॉइन पताक्षेत्राणि प्राप्तिप्रतियोगाय। 'नवं प्राप्तिपताक्षेत्रं निर्मीयताम्' बटनं प्राप्तिपृष्ठे उपयोगयित्वा नवानि पताक्षेत्राणि निर्मीयताम्। हस्ताक्षरणं केवलं 'प्राचीन' प्रकारेण पताक्षेत्राणि उपयोग्यं अस्ति।</translation>
     </message>
@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -174,7 +174,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

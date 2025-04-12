@@ -45,7 +45,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -54,11 +54,11 @@
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to Fujicoin network.</numerusform>
+            <numerusform>%n active connection(s) to Fujicoin network.</numerusform>
         </translation>
     </message>
     </context>
@@ -102,8 +102,8 @@
         <translation type="unfinished">Maximale Größe des Datenbankcaches. Stelle sicher, dass genügend RAM zur Verfügung steht. Ein größerer Cache kann zu einer schnelleren Synchronisierung beitragen, wonach der Vorteil in den meisten Anwendungsfällen weniger ausgeprägt ist. Durch Verringern der Cache-Größe wird die Speicherauslastung reduziert. Ungenutzter Mempool-Speicher wird für diesen Cache freigegeben.</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Automatisch den Bitcoin-Client-Port auf dem Router öffnen. Dies funktioniert nur, wenn dieser Router PCP oder NAT-PMP unterstützt und es aktiviert ist. Der externe Port kann zufällig sein.</translation>
+        <source>Automatically open the Fujicoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Automatisch den Fujicoin-Client-Port auf dem Router öffnen. Dies funktioniert nur, wenn dieser Router PCP oder NAT-PMP unterstützt und es aktiviert ist. Der externe Port kann zufällig sein.</translation>
     </message>
     <message>
         <source>Map port using PCP or NA&amp;T-PMP</source>
@@ -210,7 +210,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>Error starting/committing db txn for wallet transactions removal process</source>
         <translation type="unfinished">Fehler beim Starten/Commit von db txn für das Entfernen von Wallet-Transaktionen</translation>

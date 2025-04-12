@@ -58,13 +58,13 @@
         <translation type="unfinished">Ajlli&amp;ña</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Aka jichhürunakawa qillqatanaka Bitcoin dirección apayañataki. Jichha apayañkamaxa, jichhapuni chhantirinaka ukhamarak dirección uñjañamaya.</translation>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Aka jichhürunakawa qillqatanaka Fujicoin dirección apayañataki. Jichha apayañkamaxa, jichhapuni chhantirinaka ukhamarak dirección uñjañamaya.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Aka jichhürunakawa Bitcoin dirección jichha qullqi katuqañataki. Machaqa katuqaña dirección lurañataki, 'Mä machaq katuqaña dirección luraña' botón ukaxa receive taban apnaqamaya.
+        <translation type="unfinished">Aka jichhürunakawa Fujicoin dirección jichha qullqi katuqañataki. Machaqa katuqaña dirección lurañataki, 'Mä machaq katuqaña dirección luraña' botón ukaxa receive taban apnaqamaya.
 Firmaña ukaxa 'legacy' tipo direcciónkunakampikiwa posible.</translation>
     </message>
     <message>
@@ -159,7 +159,7 @@ Firmaña ukaxa 'legacy' tipo direcciónkunakampikiwa posible.</translation>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -168,7 +168,7 @@ Firmaña ukaxa 'legacy' tipo direcciónkunakampikiwa posible.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

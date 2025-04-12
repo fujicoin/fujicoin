@@ -38,11 +38,11 @@
         <translation type="unfinished">داده های موجود در برگه فعلی را به یک فایل صادر کنید</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">اینها آدرس های بیت کوین شما برای ارسال پرداخت هستند. همیشه قبل از ارسال سکه، مبلغ و آدرس دریافت کننده را بررسی کنید.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">اینها آدرس های بیت کوین شما برای دریافت هستند. از دکمه "ایجاد آدرس دریافت جدید" در برگه دریافت برای ایجاد آدرس های جدید استفاده کنید.
 امضا فقط با آدرس هایی از نوع "میراث" امکان پذیر است.</translation>
@@ -82,7 +82,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">سفارشی...</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Fujicoin address (e.g. %1)</source>
         <translation type="unfinished">آدرس بیت کوین را وارد کنید (به طور مثال %1)</translation>
     </message>
     <message>
@@ -207,7 +207,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">بازبینی</translation>
@@ -272,7 +272,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">پراکسی &lt;b&gt;فعال&lt;/b&gt; شده است: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Fujicoin address</source>
         <translation type="unfinished">ارسال کوین به آدرس بیت کوین</translation>
     </message>
     <message>
@@ -314,7 +314,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">ثبت &amp;پیام</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
         <translation type="unfinished">پیام‌ها را با آدرس بیت‌کوین خود امضا کنید تا مالکیت آن‌ها را اثبات کنید</translation>
     </message>
     <message>
@@ -444,7 +444,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">ادرس درسافت</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
+        <source>Open a fujicoin: URI</source>
         <translation type="unfinished">بارک کردن یک بیت‌کوین: URI</translation>
     </message>
     <message>
@@ -510,7 +510,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">مخفی کن</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>%n اتصال(های) فعال به شبکه بیت کوین.</numerusform>
@@ -788,7 +788,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">اجازه ورود و اتصالات</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Fujicoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">از طریق یک پروکسی SOCKS5 به شبکه بیت کوین متصل شوید.</translation>
     </message>
     <message>
@@ -960,8 +960,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه Bitcoin همگام سازی می شود ، اما این روند هنوز کامل نشده است.
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه Fujicoin همگام سازی می شود ، اما این روند هنوز کامل نشده است.
  </translation>
     </message>
     <message>
@@ -1105,7 +1105,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">درخواست پرداخت با خطا مواجه شد</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start fujicoin: click-to-pay handler</source>
         <translation type="unfinished">نمی توان بیت کوین را شروع کرد: کنترل کننده کلیک برای پرداخت
  </translation>
     </message>
@@ -1174,7 +1174,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">آدرس‌های محلی</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <source>Network addresses that your Fujicoin node is currently using to communicate with other nodes.</source>
         <translation type="unfinished">آدرس‌های شبکه ای که گره بیت کوین شما در حال حاضر از آنها برای ارتباط با گره های دیگر استفاده می کند.</translation>
     </message>
     <message>
@@ -1305,7 +1305,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive fujicoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">می‌توانید پیام‌ها/توافق‌نامه‌هایی را با آدرس‌های قدیمی خود (P2PKH) امضا کنید تا ثابت کنید که می‌توانید بیت‌کوین‌های ارسال شده برای آنها را دریافت کنید. مراقب باشید هیچ چیز مبهم یا تصادفی را امضا نکنید، زیرا حملات فیشینگ ممکن است سعی کنند شما را فریب دهند تا با هویت خود آنها را امضا کنید. فقط اظهارات کاملاً مفصلی را که قابل قبول هستند را امضا کنید.</translation>
     </message>
     </context>
@@ -1377,7 +1377,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>Error: Unable to read wallet's best block locator record</source>
         <translation type="unfinished">خطا: خواندن بهترین سابقه یاب بلوک کیف پول امکان پذیر نیست</translation>
