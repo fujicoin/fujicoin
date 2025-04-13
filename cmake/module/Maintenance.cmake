@@ -57,7 +57,6 @@ function(add_windows_deploy_target)
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-tx> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-tx>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-wallet> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-wallet>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-util> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-util>
-      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:test_fujicoin> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:test_fujicoin>
       COMMAND makensis -V2 ${PROJECT_BINARY_DIR}/fujicoin-win64-setup.nsi
       VERBATIM
     )
