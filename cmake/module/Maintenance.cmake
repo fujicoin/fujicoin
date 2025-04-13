@@ -43,7 +43,7 @@ function(add_maintenance_targets)
 endfunction()
 
 function(add_windows_deploy_target)
-  if(MINGW AND TARGET fujicoin-qt AND TARGET fujicoind AND TARGET fujicoin-cli AND TARGET fujicoin-tx AND TARGET fujicoin-wallet AND TARGET fujicoin-util AND TARGET test_fujicoin)
+  if(MINGW AND TARGET fujicoin-qt AND TARGET fujicoind AND TARGET fujicoin-cli AND TARGET fujicoin-tx AND TARGET fujicoin-wallet AND TARGET fujicoin-util)
     # TODO: Consider replacing this code with the CPack NSIS Generator.
     #       See https://cmake.org/cmake/help/latest/cpack_gen/nsis.html
     include(GenerateSetupNsi)
