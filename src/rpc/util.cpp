@@ -95,7 +95,7 @@ CAmount AmountFromValue(const UniValue& value, int decimals)
 CFeeRate ParseFeeRate(const UniValue& json)
 {
     CAmount val{AmountFromValue(json)};
-    if (val >= COIN) throw JSONRPCError(RPC_INVALID_PARAMETER, "Fee rates larger than or equal to 1FJC/kvB are not accepted");
+    if (val >= 100 * COIN) throw JSONRPCError(RPC_INVALID_PARAMETER, "Fee rates larger than or equal to 100 FJC/kvB are not accepted");
     return CFeeRate{val};
 }
 
