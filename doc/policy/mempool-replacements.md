@@ -17,7 +17,7 @@ other consensus and policy rules, each of the following conditions are met:
    *Rationale*: See [BIP125
    explanation](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki#motivation).
 
-2. The replacement transaction only include an unconfirmed input if that input was included in
+2. The replacement transaction only includes an unconfirmed input if that input was included in
    one of the directly conflicting transactions. An unconfirmed input spends an output from a
    currently-unconfirmed transaction.
 
