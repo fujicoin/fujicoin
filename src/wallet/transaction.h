@@ -1,9 +1,9 @@
-// Copyright (c) 2021-2022 The Bitcoin Core developers
+// Copyright (c) 2021-2022 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_TRANSACTION_H
-#define BITCOIN_WALLET_TRANSACTION_H
+#ifndef FUJICOIN_WALLET_TRANSACTION_H
+#define FUJICOIN_WALLET_TRANSACTION_H
 
 #include <attributes.h>
 #include <consensus/amount.h>
@@ -406,4 +406,4 @@ public:
 };
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_TRANSACTION_H
+#endif // FUJICOIN_WALLET_TRANSACTION_H

@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present The Bitcoin Core developers
+# Copyright (c) 2023-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
@@ -26,7 +26,7 @@ get_directory_property(precious_variables CACHE_VARIABLES)
 #=============================
 # Project / Package metadata
 #=============================
-set(CLIENT_NAME "Bitcoin Core")
+set(CLIENT_NAME "Fujicoin Core")
 set(CLIENT_VERSION_MAJOR 30)
 set(CLIENT_VERSION_MINOR 0)
 set(CLIENT_VERSION_BUILD 0)
@@ -50,10 +50,10 @@ set(CMAKE_TRY_COMPILE_PLATFORM_VARIABLES
   CMAKE_CXX_LINK_EXECUTABLE
 )
 
-project(BitcoinCore
+project(FujicoinCore
   VERSION ${CLIENT_VERSION_MAJOR}.${CLIENT_VERSION_MINOR}.${CLIENT_VERSION_BUILD}
-  DESCRIPTION "Bitcoin client software"
-  HOMEPAGE_URL "https://bitcoincore.org/"
+  DESCRIPTION "Fujicoin client software"
+  HOMEPAGE_URL "https://fujicoincore.org/"
   LANGUAGES NONE
 )
 
@@ -64,7 +64,7 @@ endif()
 
 set(COPYRIGHT_HOLDERS "The %s developers")
 set(COPYRIGHT_HOLDERS_FINAL "The ${CLIENT_NAME} developers")
-set(CLIENT_BUGREPORT "https://github.com/bitcoin/bitcoin/issues")
+set(CLIENT_BUGREPORT "https://github.com/fujicoin/fujicoin/issues")
 
 #=============================
 # Language setup
@@ -94,17 +94,17 @@ endif()
 #=============================
 include(CMakeDependentOption)
 # When adding a new option, end the <help_text> with a full stop for consistency.
-option(BUILD_BITCOIN_BIN "Build bitcoin executable." ON)
-option(BUILD_DAEMON "Build bitcoind executable." ON)
-option(BUILD_GUI "Build bitcoin-qt executable." OFF)
-option(BUILD_CLI "Build bitcoin-cli executable." ON)
+option(BUILD_FUJICOIN_BIN "Build fujicoin executable." ON)
+option(BUILD_DAEMON "Build fujicoind executable." ON)
+option(BUILD_GUI "Build fujicoin-qt executable." OFF)
+option(BUILD_CLI "Build fujicoin-cli executable." ON)
 
-option(BUILD_TESTS "Build test_bitcoin and other unit test executables." ON)
-option(BUILD_TX "Build bitcoin-tx executable." ${BUILD_TESTS})
-option(BUILD_UTIL "Build bitcoin-util executable." ${BUILD_TESTS})
+option(BUILD_TESTS "Build test_fujicoin and other unit test executables." ON)
+option(BUILD_TX "Build fujicoin-tx executable." ${BUILD_TESTS})
+option(BUILD_UTIL "Build fujicoin-util executable." ${BUILD_TESTS})
 
-option(BUILD_UTIL_CHAINSTATE "Build experimental bitcoin-chainstate executable." OFF)
-option(BUILD_KERNEL_LIB "Build experimental bitcoinkernel library." ${BUILD_UTIL_CHAINSTATE})
+option(BUILD_UTIL_CHAINSTATE "Build experimental fujicoin-chainstate executable." OFF)
+option(BUILD_KERNEL_LIB "Build experimental fujicoinkernel library." ${BUILD_UTIL_CHAINSTATE})
 
 option(ENABLE_WALLET "Enable wallet." ON)
 if(ENABLE_WALLET)
@@ -115,7 +115,7 @@ if(ENABLE_WALLET)
     find_package(SQLite3 3.7.17 REQUIRED)
   endif()
 endif()
-cmake_dependent_option(BUILD_WALLET_TOOL "Build bitcoin-wallet tool." ${BUILD_TESTS} "ENABLE_WALLET" OFF)
+cmake_dependent_option(BUILD_WALLET_TOOL "Build fujicoin-wallet tool." ${BUILD_TESTS} "ENABLE_WALLET" OFF)
 
 option(REDUCE_EXPORTS "Attempt to reduce exported symbols in the resulting executables." OFF)
 option(WERROR "Treat compiler warnings as errors." OFF)
@@ -141,7 +141,7 @@ endif()
 
 cmake_dependent_option(WITH_DBUS "Enable DBus support." ON "NOT CMAKE_SYSTEM_NAME MATCHES \"(Windows|Darwin)\" AND BUILD_GUI" OFF)
 
-cmake_dependent_option(ENABLE_IPC "Build multiprocess bitcoin-node and bitcoin-gui executables in addition to monolithic bitcoind and bitcoin-qt executables." ON "NOT WIN32" OFF)
+cmake_dependent_option(ENABLE_IPC "Build multiprocess fujicoin-node and fujicoin-gui executables in addition to monolithic fujicoind and fujicoin-qt executables." ON "NOT WIN32" OFF)
 cmake_dependent_option(WITH_EXTERNAL_LIBMULTIPROCESS "Build with external libmultiprocess library instead of with local git subtree when ENABLE_IPC is enabled. This is not normally recommended, but can be useful for developing libmultiprocess itself." OFF "ENABLE_IPC" OFF)
 if(ENABLE_IPC AND WITH_EXTERNAL_LIBMULTIPROCESS)
   find_package(Libmultiprocess REQUIRED COMPONENTS Lib)
@@ -150,7 +150,7 @@ if(ENABLE_IPC AND WITH_EXTERNAL_LIBMULTIPROCESS)
   )
 endif()
 
-cmake_dependent_option(BUILD_GUI_TESTS "Build test_bitcoin-qt executable." ON "BUILD_GUI;BUILD_TESTS" OFF)
+cmake_dependent_option(BUILD_GUI_TESTS "Build test_fujicoin-qt executable." ON "BUILD_GUI;BUILD_TESTS" OFF)
 if(BUILD_GUI)
   set(qt_components Core Gui Widgets LinguistTools)
   if(ENABLE_WALLET)
@@ -169,7 +169,7 @@ if(BUILD_GUI)
   unset(qt_components)
 endif()
 
-option(BUILD_BENCH "Build bench_bitcoin executable." OFF)
+option(BUILD_BENCH "Build bench_fujicoin executable." OFF)
 option(BUILD_FUZZ_BINARY "Build fuzz binary." OFF)
 option(BUILD_FOR_FUZZING "Build for fuzzing. Enabling this will disable all other targets and override BUILD_FUZZ_BINARY." OFF)
 
@@ -203,7 +203,7 @@ target_link_libraries(core_interface INTERFACE
 
 if(BUILD_FOR_FUZZING)
   message(WARNING "BUILD_FOR_FUZZING=ON will disable all other targets and force BUILD_FUZZ_BINARY=ON.")
-  set(BUILD_BITCOIN_BIN OFF)
+  set(BUILD_FUJICOIN_BIN OFF)
   set(BUILD_DAEMON OFF)
   set(BUILD_CLI OFF)
   set(BUILD_TX OFF)
@@ -307,7 +307,7 @@ if(WIN32)
 
   # Workaround producing large object files, which cannot be handled by the assembler.
   # More likely to happen with no, or lower levels of optimisation.
-  # See discussion in https://github.com/bitcoin/bitcoin/issues/28109.
+  # See discussion in https://github.com/fujicoin/fujicoin/issues/28109.
   if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     try_append_cxx_flags("/bigobj" TARGET core_interface_debug SKIP_LINK)
   else()
@@ -546,13 +546,13 @@ else()
   try_append_linker_flag("-Wl,--high-entropy-va" TARGET core_interface)
   try_append_linker_flag("-Wl,-z,relro" TARGET core_interface)
   try_append_linker_flag("-Wl,-z,now" TARGET core_interface)
-  # TODO: This can be dropped once Bitcoin Core no longer supports
+  # TODO: This can be dropped once Fujicoin Core no longer supports
   #       NetBSD 10.0 or if upstream fix is backported.
   # NetBSD's dynamic linker ld.elf_so < 11.0 supports exactly 2
   # `PT_LOAD` segments and binaries linked with `-z separate-code`
   # have 4 `PT_LOAD` segments.
   # Relevant discussions:
-  # - https://github.com/bitcoin/bitcoin/pull/28724#issuecomment-2589347934
+  # - https://github.com/fujicoin/fujicoin/pull/28724#issuecomment-2589347934
   # - https://mail-index.netbsd.org/tech-userlevel/2023/01/05/msg013666.html
   if(CMAKE_SYSTEM_NAME STREQUAL "NetBSD" AND CMAKE_SYSTEM_VERSION VERSION_LESS 11.0)
     try_append_linker_flag("-Wl,-z,noseparate-code" TARGET core_interface)
@@ -623,8 +623,8 @@ endif()
 #       in the future after reordering Guix script commands to
 #       perform binary checks after the installation step.
 # Relevant discussions:
-# - https://github.com/hebasto/bitcoin/pull/236#issuecomment-2183120953
-# - https://github.com/bitcoin/bitcoin/pull/30312#issuecomment-2191235833
+# - https://github.com/hebasto/fujicoin/pull/236#issuecomment-2183120953
+# - https://github.com/fujicoin/fujicoin/pull/30312#issuecomment-2191235833
 # NetBSD always requires runtime paths to be set for executables.
 if(CMAKE_SYSTEM_NAME STREQUAL "NetBSD")
   set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
@@ -647,27 +647,27 @@ message("\n")
 message("Configure summary")
 message("=================")
 message("Executables:")
-message("  bitcoin ............................. ${BUILD_BITCOIN_BIN}")
-message("  bitcoind ............................ ${BUILD_DAEMON}")
+message("  fujicoin ............................. ${BUILD_FUJICOIN_BIN}")
+message("  fujicoind ............................ ${BUILD_DAEMON}")
 if(BUILD_DAEMON AND ENABLE_IPC)
-  set(bitcoin_daemon_status ON)
+  set(fujicoin_daemon_status ON)
 else()
-  set(bitcoin_daemon_status OFF)
+  set(fujicoin_daemon_status OFF)
 endif()
-message("  bitcoin-node (multiprocess) ......... ${bitcoin_daemon_status}")
-message("  bitcoin-qt (GUI) .................... ${BUILD_GUI}")
+message("  fujicoin-node (multiprocess) ......... ${fujicoin_daemon_status}")
+message("  fujicoin-qt (GUI) .................... ${BUILD_GUI}")
 if(BUILD_GUI AND ENABLE_IPC)
-  set(bitcoin_gui_status ON)
+  set(fujicoin_gui_status ON)
 else()
-  set(bitcoin_gui_status OFF)
+  set(fujicoin_gui_status OFF)
 endif()
-message("  bitcoin-gui (GUI, multiprocess) ..... ${bitcoin_gui_status}")
-message("  bitcoin-cli ......................... ${BUILD_CLI}")
-message("  bitcoin-tx .......................... ${BUILD_TX}")
-message("  bitcoin-util ........................ ${BUILD_UTIL}")
-message("  bitcoin-wallet ...................... ${BUILD_WALLET_TOOL}")
-message("  bitcoin-chainstate (experimental) ... ${BUILD_UTIL_CHAINSTATE}")
-message("  libbitcoinkernel (experimental) ..... ${BUILD_KERNEL_LIB}")
+message("  fujicoin-gui (GUI, multiprocess) ..... ${fujicoin_gui_status}")
+message("  fujicoin-cli ......................... ${BUILD_CLI}")
+message("  fujicoin-tx .......................... ${BUILD_TX}")
+message("  fujicoin-util ........................ ${BUILD_UTIL}")
+message("  fujicoin-wallet ...................... ${BUILD_WALLET_TOOL}")
+message("  fujicoin-chainstate (experimental) ... ${BUILD_UTIL_CHAINSTATE}")
+message("  libfujicoinkernel (experimental) ..... ${BUILD_KERNEL_LIB}")
 message("Optional features:")
 message("  wallet support ...................... ${ENABLE_WALLET}")
 message("  external signer ..................... ${ENABLE_EXTERNAL_SIGNER}")
@@ -686,9 +686,9 @@ message("  USDT tracing ........................ ${WITH_USDT}")
 message("  QR code (GUI) ....................... ${WITH_QRENCODE}")
 message("  DBus (GUI) .......................... ${WITH_DBUS}")
 message("Tests:")
-message("  test_bitcoin ........................ ${BUILD_TESTS}")
-message("  test_bitcoin-qt ..................... ${BUILD_GUI_TESTS}")
-message("  bench_bitcoin ....................... ${BUILD_BENCH}")
+message("  test_fujicoin ........................ ${BUILD_TESTS}")
+message("  test_fujicoin-qt ..................... ${BUILD_GUI_TESTS}")
+message("  bench_fujicoin ....................... ${BUILD_BENCH}")
 message("  fuzz binary ......................... ${BUILD_FUZZ_BINARY}")
 message("")
 if(CMAKE_CROSSCOMPILING)

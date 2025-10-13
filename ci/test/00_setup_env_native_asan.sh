@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2019-present The Bitcoin Core developers
+# Copyright (c) 2019-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,7 +25,7 @@ export PIP_PACKAGES="--break-system-packages pycapnp"
 export NO_DEPENDS=1
 export GOAL="install"
 export CI_LIMIT_STACK_SIZE=1
-export BITCOIN_CONFIG="\
+export FUJICOIN_CONFIG="\
  -DWITH_USDT=ON -DWITH_ZMQ=ON -DBUILD_GUI=ON \
  -DSANITIZERS=address,float-divide-by-zero,integer,undefined \
  -DCMAKE_C_COMPILER=clang \

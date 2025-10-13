@@ -1,9 +1,9 @@
-// Copyright (c) 2020-present The Bitcoin Core developers
+// Copyright (c) 2020-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TXREQUEST_H
-#define BITCOIN_TXREQUEST_H
+#ifndef FUJICOIN_TXREQUEST_H
+#define FUJICOIN_TXREQUEST_H
 
 #include <primitives/transaction.h>
 #include <net.h>
@@ -95,7 +95,7 @@
  *
  * Context:
  * - In an earlier version of the transaction request logic it was possible for a peer to prevent us from seeing a
- *   specific transaction. See https://bitcoincore.org/en/2024/07/03/disclose_already_asked_for.
+ *   specific transaction. See https://fujicoincore.org/en/2024/07/03/disclose_already_asked_for.
  */
 class TxRequestTracker {
     // Avoid littering this header file with implementation details.
@@ -215,4 +215,4 @@ public:
     void PostGetRequestableSanityCheck(std::chrono::microseconds now) const;
 };
 
-#endif // BITCOIN_TXREQUEST_H
+#endif // FUJICOIN_TXREQUEST_H

@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-present The Bitcoin Core developers
+// Copyright (c) 2009-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_WALLETDB_H
-#define BITCOIN_WALLET_WALLETDB_H
+#ifndef FUJICOIN_WALLET_WALLETDB_H
+#define FUJICOIN_WALLET_WALLETDB_H
 
 #include <key.h>
 #include <primitives/transaction_identifier.h>
@@ -309,4 +309,4 @@ bool HasLegacyRecords(CWallet& wallet);
 bool HasLegacyRecords(CWallet& wallet, DatabaseBatch& batch);
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_WALLETDB_H
+#endif // FUJICOIN_WALLET_WALLETDB_H

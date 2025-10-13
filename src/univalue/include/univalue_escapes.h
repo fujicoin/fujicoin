@@ -1,10 +1,10 @@
 // Copyright 2014 BitPay Inc.
-// Copyright (c) 2022-present The Bitcoin Core developers
+// Copyright (c) 2022-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or https://opensource.org/license/mit.
 
-#ifndef BITCOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H
-#define BITCOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H
+#ifndef FUJICOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H
+#define FUJICOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H
 static const char *escapes[256] = {
 	"\\u0000",
 	"\\u0001",
@@ -263,4 +263,4 @@ static const char *escapes[256] = {
 	nullptr,
 	nullptr,
 };
-#endif // BITCOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H
+#endif // FUJICOIN_UNIVALUE_INCLUDE_UNIVALUE_ESCAPES_H

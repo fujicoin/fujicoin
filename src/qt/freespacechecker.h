@@ -1,9 +1,9 @@
-// Copyright (c) 2011-present The Bitcoin Core developers
+// Copyright (c) 2011-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_FREESPACECHECKER_H
-#define BITCOIN_QT_FREESPACECHECKER_H
+#ifndef FUJICOIN_QT_FREESPACECHECKER_H
+#define FUJICOIN_QT_FREESPACECHECKER_H
 
 #include <QObject>
 #include <QString>
@@ -47,4 +47,4 @@ private:
     PathQuery* intro;
 };
 
-#endif // BITCOIN_QT_FREESPACECHECKER_H
+#endif // FUJICOIN_QT_FREESPACECHECKER_H

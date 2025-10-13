@@ -1,9 +1,9 @@
-// Copyright (c) 2021-present The Bitcoin Core developers
+// Copyright (c) 2021-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_TEST_UTIL_H
-#define BITCOIN_WALLET_TEST_UTIL_H
+#ifndef FUJICOIN_WALLET_TEST_UTIL_H
+#define FUJICOIN_WALLET_TEST_UTIL_H
 
 #include <addresstype.h>
 #include <wallet/db.h>
@@ -120,4 +120,4 @@ MockableDatabase& GetMockableDatabase(CWallet& wallet);
 DescriptorScriptPubKeyMan* CreateDescriptor(CWallet& keystore, const std::string& desc_str, const bool success);
 } // namespace wallet
 
-#endif // BITCOIN_WALLET_TEST_UTIL_H
+#endif // FUJICOIN_WALLET_TEST_UTIL_H

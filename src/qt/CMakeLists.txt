@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present The Bitcoin Core developers
+# Copyright (c) 2023-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
@@ -54,23 +54,23 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOUIC_SEARCH_PATHS forms)
 
-configure_file(bitcoin_locale.qrc bitcoin_locale.qrc USE_SOURCE_PERMISSIONS COPYONLY)
+configure_file(fujicoin_locale.qrc fujicoin_locale.qrc USE_SOURCE_PERMISSIONS COPYONLY)
 
-# The bitcoinqt sources have to include headers in
+# The fujicoinqt sources have to include headers in
 # order to parse them to collect translatable strings.
-add_library(bitcoinqt STATIC EXCLUDE_FROM_ALL
+add_library(fujicoinqt STATIC EXCLUDE_FROM_ALL
   bantablemodel.cpp
   bantablemodel.h
-  bitcoin.cpp
-  bitcoin.h
-  bitcoinaddressvalidator.cpp
-  bitcoinaddressvalidator.h
-  bitcoinamountfield.cpp
-  bitcoinamountfield.h
-  bitcoingui.cpp
-  bitcoingui.h
-  bitcoinunits.cpp
-  bitcoinunits.h
+  fujicoin.cpp
+  fujicoin.h
+  fujicoinaddressvalidator.cpp
+  fujicoinaddressvalidator.h
+  fujicoinamountfield.cpp
+  fujicoinamountfield.h
+  fujicoingui.cpp
+  fujicoingui.h
+  fujicoinunits.cpp
+  fujicoinunits.h
   clientmodel.cpp
   clientmodel.h
   csvmodelwriter.cpp
@@ -119,15 +119,15 @@ add_library(bitcoinqt STATIC EXCLUDE_FROM_ALL
   utilitydialog.h
   $<$<PLATFORM_ID:Windows>:winshutdownmonitor.cpp>
   $<$<PLATFORM_ID:Windows>:winshutdownmonitor.h>
-  bitcoin.qrc
-  ${CMAKE_CURRENT_BINARY_DIR}/bitcoin_locale.qrc
+  fujicoin.qrc
+  ${CMAKE_CURRENT_BINARY_DIR}/fujicoin_locale.qrc
 )
-target_compile_definitions(bitcoinqt
+target_compile_definitions(fujicoinqt
   PUBLIC
     QT_NO_KEYWORDS
     QT_USE_QSTRINGBUILDER
 )
-target_include_directories(bitcoinqt
+target_include_directories(fujicoinqt
   PUBLIC
     $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/src>
 )
@@ -135,12 +135,12 @@ set_property(SOURCE macnotificationhandler.mm
   # Ignore warnings "'NSUserNotificationCenter' is deprecated: first deprecated in macOS 11.0".
   APPEND PROPERTY COMPILE_OPTIONS -Wno-deprecated-declarations
 )
-target_link_libraries(bitcoinqt
+target_link_libraries(fujicoinqt
   PUBLIC
     Qt6::Widgets
   PRIVATE
     core_interface
-    bitcoin_cli
+    fujicoin_cli
     leveldb
     Boost::headers
     $<TARGET_NAME_IF_EXISTS:QRencode::QRencode>
@@ -149,7 +149,7 @@ target_link_libraries(bitcoinqt
 )
 
 if(ENABLE_WALLET)
-  target_sources(bitcoinqt
+  target_sources(fujicoinqt
     PRIVATE
       addressbookpage.cpp
       addressbookpage.h
@@ -212,21 +212,21 @@ if(ENABLE_WALLET)
       walletview.cpp
       walletview.h
   )
-  target_link_libraries(bitcoinqt
+  target_link_libraries(fujicoinqt
     PRIVATE
-      bitcoin_wallet
+      fujicoin_wallet
       Qt6::Network
   )
 endif()
 
 if(WITH_DBUS)
-  target_link_libraries(bitcoinqt PRIVATE Qt6::DBus)
+  target_link_libraries(fujicoinqt PRIVATE Qt6::DBus)
 endif()
 
 if(qt_lib_type STREQUAL "STATIC_LIBRARY")
   # We want to define static plugins to link ourselves, thus preventing
   # automatic linking against a "sane" set of default static plugins.
-  qt6_import_plugins(bitcoinqt
+  qt6_import_plugins(fujicoinqt
     EXCLUDE_BY_TYPE
       accessiblebridge
       platforms
@@ -247,41 +247,41 @@ endif()
 
 add_subdirectory(locale)
 
-add_executable(bitcoin-qt
+add_executable(fujicoin-qt
   main.cpp
-  ../init/bitcoin-qt.cpp
+  ../init/fujicoin-qt.cpp
 )
 
-add_windows_resources(bitcoin-qt res/bitcoin-qt-res.rc)
-add_windows_application_manifest(bitcoin-qt)
+add_windows_resources(fujicoin-qt res/fujicoin-qt-res.rc)
+add_windows_application_manifest(fujicoin-qt)
 
-target_link_libraries(bitcoin-qt
+target_link_libraries(fujicoin-qt
   core_interface
-  bitcoinqt
-  bitcoin_node
+  fujicoinqt
+  fujicoin_node
 )
 
-import_plugins(bitcoin-qt)
-install_binary_component(bitcoin-qt HAS_MANPAGE)
+import_plugins(fujicoin-qt)
+install_binary_component(fujicoin-qt HAS_MANPAGE)
 if(WIN32)
-  set_target_properties(bitcoin-qt PROPERTIES WIN32_EXECUTABLE TRUE)
+  set_target_properties(fujicoin-qt PROPERTIES WIN32_EXECUTABLE TRUE)
 endif()
 
 if(ENABLE_IPC)
-  add_executable(bitcoin-gui
+  add_executable(fujicoin-gui
     main.cpp
-    ../init/bitcoin-gui.cpp
+    ../init/fujicoin-gui.cpp
   )
-  target_link_libraries(bitcoin-gui
+  target_link_libraries(fujicoin-gui
     core_interface
-    bitcoinqt
-    bitcoin_node
-    bitcoin_ipc
+    fujicoinqt
+    fujicoin_node
+    fujicoin_ipc
   )
-  import_plugins(bitcoin-gui)
-  install_binary_component(bitcoin-gui INTERNAL)
+  import_plugins(fujicoin-gui)
+  install_binary_component(fujicoin-gui INTERNAL)
   if(WIN32)
-    set_target_properties(bitcoin-gui PROPERTIES WIN32_EXECUTABLE TRUE)
+    set_target_properties(fujicoin-gui PROPERTIES WIN32_EXECUTABLE TRUE)
   endif()
 endif()
 

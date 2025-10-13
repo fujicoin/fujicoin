@@ -1,9 +1,9 @@
-// Copyright (c) 2014-2020 The Bitcoin Core developers
+// Copyright (c) 2014-2020 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAINPARAMSBASE_H
-#define BITCOIN_CHAINPARAMSBASE_H
+#ifndef FUJICOIN_CHAINPARAMSBASE_H
+#define FUJICOIN_CHAINPARAMSBASE_H
 
 #include <util/chaintype.h>
 
@@ -14,8 +14,8 @@
 class ArgsManager;
 
 /**
- * CBaseChainParams defines the base parameters (shared between bitcoin-cli and bitcoind)
- * of a given instance of the Bitcoin system.
+ * CBaseChainParams defines the base parameters (shared between fujicoin-cli and fujicoind)
+ * of a given instance of the Fujicoin system.
  */
 class CBaseChainParams
 {
@@ -54,4 +54,4 @@ void SelectBaseParams(const ChainType chain);
 /** List of possible chain / network names  */
 #define LIST_CHAIN_NAMES "main, test, testnet4, signet, regtest"
 
-#endif // BITCOIN_CHAINPARAMSBASE_H
+#endif // FUJICOIN_CHAINPARAMSBASE_H

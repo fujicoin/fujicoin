@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-present The Bitcoin Core developers
+// Copyright (c) 2009-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -2429,7 +2429,7 @@ void PeerManagerImpl::ProcessGetData(CNode& pfrom, Peer& peer, const std::atomic
         // and continue processing the queue on the next call.
         // NOTE: previously we wouldn't do so and the peer sending us a malformed GETDATA could
         // result in never making progress and this thread using 100% allocated CPU. See
-        // https://bitcoincore.org/en/2024/07/03/disclose-getdata-cpu.
+        // https://fujicoincore.org/en/2024/07/03/disclose-getdata-cpu.
     }
 
     peer.m_getdata_requests.erase(peer.m_getdata_requests.begin(), it);
@@ -3082,7 +3082,7 @@ void PeerManagerImpl::ProcessPackageResult(const node::PackageToValidate& packag
 }
 
 // NOTE: the orphan processing used to be uninterruptible and quadratic, which could allow a peer to stall the node for
-// hours with specially crafted transactions. See https://bitcoincore.org/en/2024/07/03/disclose-orphan-dos.
+// hours with specially crafted transactions. See https://fujicoincore.org/en/2024/07/03/disclose-orphan-dos.
 bool PeerManagerImpl::ProcessOrphanTx(Peer& peer)
 {
     AssertLockHeld(g_msgproc_mutex);

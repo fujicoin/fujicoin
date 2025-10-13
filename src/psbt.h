@@ -1,9 +1,9 @@
-// Copyright (c) 2009-present The Bitcoin Core developers
+// Copyright (c) 2009-present The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_PSBT_H
-#define BITCOIN_PSBT_H
+#ifndef FUJICOIN_PSBT_H
+#define FUJICOIN_PSBT_H
 
 #include <common/types.h>
 #include <node/transaction.h>
@@ -1131,7 +1131,7 @@ struct PartiallySignedTransaction
     uint32_t GetVersion() const;
 
     /** Merge psbt into this. The two psbts must have the same underlying CTransaction (i.e. the
-      * same actual Bitcoin transaction.) Returns true if the merge succeeded, false otherwise. */
+      * same actual Fujicoin transaction.) Returns true if the merge succeeded, false otherwise. */
     [[nodiscard]] bool Merge(const PartiallySignedTransaction& psbt);
     bool AddInput(const CTxIn& txin, PSBTInput& psbtin);
     bool AddOutput(const CTxOut& txout, const PSBTOutput& psbtout);
@@ -1449,4 +1449,4 @@ bool FinalizeAndExtractPSBT(PartiallySignedTransaction& psbtx, CMutableTransacti
 //! Decode a raw (binary blob) PSBT into a PartiallySignedTransaction
 [[nodiscard]] bool DecodeRawPSBT(PartiallySignedTransaction& decoded_psbt, std::span<const std::byte> raw_psbt, std::string& error);
 
-#endif // BITCOIN_PSBT_H
+#endif // FUJICOIN_PSBT_H

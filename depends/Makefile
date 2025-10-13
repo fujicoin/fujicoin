@@ -42,7 +42,7 @@ NO_USDT ?=
 # Default NO_IPC value is 1 on Windows
 NO_IPC ?= $(if $(findstring mingw32,$(HOST)),1,)
 LTO ?=
-FALLBACK_DOWNLOAD_PATH ?= https://bitcoincore.org/depends-sources
+FALLBACK_DOWNLOAD_PATH ?= https://fujicoincore.org/depends-sources
 
 C_STANDARD ?= c11
 CXX_STANDARD ?= c++20
@@ -191,7 +191,7 @@ $(host_prefix)/.stamp_$(final_build_id): $(native_packages) $(packages)
 	echo copying packages: $^
 	echo to: $(@D)
 	cd $(@D); $(foreach package,$^, $(build_TAR) xf $($(package)_cached); )
-	echo To build Bitcoin Core with these packages, pass \'--toolchain $(@D)/toolchain.cmake\' to the first CMake invocation.
+	echo To build Fujicoin Core with these packages, pass \'--toolchain $(@D)/toolchain.cmake\' to the first CMake invocation.
 	touch $@
 
 ifeq ($(host),$(build))

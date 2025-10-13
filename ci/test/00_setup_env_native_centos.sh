@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2020-present The Bitcoin Core developers
+# Copyright (c) 2020-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,10 +12,10 @@ export CI_BASE_PACKAGES="gcc-c++ glibc-devel libstdc++-devel ccache make ninja-b
 export PIP_PACKAGES="pyzmq pycapnp"
 export DEP_OPTS="DEBUG=1"
 export GOAL="install"
-export BITCOIN_CONFIG="\
+export FUJICOIN_CONFIG="\
  -DWITH_ZMQ=ON \
  -DBUILD_GUI=ON \
  -DREDUCE_EXPORTS=ON \
  -DCMAKE_BUILD_TYPE=Debug \
 "
-export BITCOIN_CMD="bitcoin -m" # Used in functional tests
+export FUJICOIN_CMD="fujicoin -m" # Used in functional tests

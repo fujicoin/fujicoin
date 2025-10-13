@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2018-present The Bitcoin Core developers
+# Copyright (c) 2018-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Backwards compatibility functional test
@@ -19,7 +19,7 @@ import os
 import shutil
 
 from test_framework.blocktools import COINBASE_MATURITY
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import FujicoinTestFramework
 from test_framework.descriptors import descsum_create
 
 from test_framework.util import (
@@ -29,7 +29,7 @@ from test_framework.util import (
 
 LAST_KEYPOOL_INDEX = 9 # Index of the last derived address with the keypool size of 10
 
-class BackwardsCompatibilityTest(BitcoinTestFramework):
+class BackwardsCompatibilityTest(FujicoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 8

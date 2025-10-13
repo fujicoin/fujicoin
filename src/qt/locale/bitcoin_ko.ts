@@ -54,11 +54,11 @@
         <translation type="unfinished">선택(&amp;H)</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Fujicoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">비트코인을 보내는 계좌 주소입니다. 코인을 보내기 전에 금액과 받는 주소를 항상 확인하십시오.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your Fujicoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">비트코인을 받는 계좌 주소입니다. 신규 주소를 만들려면 수신 탭의 '새 수신 주소를 생성하기' 버튼을 사용하십시오.
 서명은 '레거시' 타입의 주소만 가능합니다.</translation>
@@ -160,7 +160,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">지갑 암호화 승인</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FUJICOINS&lt;/b&gt;!</source>
         <translation type="unfinished">경고: 만약 암호화 된 지갑의 암호문을 잃어버릴 경우, &lt;b&gt;모든 비트코인들을 잃어버릴 수 있습니다&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">뒤로가기</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your fujicoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">지갑을 암호화 해도 컴퓨터에 바이러스가 있을시 안전하지 않다는 것을 참고하세요.</translation>
     </message>
     <message>
@@ -260,7 +260,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>FujicoinApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">%1파일 세팅이 잘못되었거나 유효하지 않습니다.</translation>
@@ -315,7 +315,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">금액</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a Fujicoin address (e.g. %1)</source>
         <translation type="unfinished">비트코인 주소를 입력하세요 (예: %1)</translation>
     </message>
     <message>
@@ -435,7 +435,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>FujicoinGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">개요(&amp;O)</translation>
@@ -502,7 +502,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">프록시가 &lt;b&gt;활성화&lt;/b&gt; 되었습니다: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a Fujicoin address</source>
         <translation type="unfinished">코인을 비트코인 주소로 전송합니다.</translation>
     </message>
     <message>
@@ -546,7 +546,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지 서명(&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your Fujicoin addresses to prove you own them</source>
         <translation type="unfinished">지갑 주소가 본인 소유인지 증명하기 위해 메시지를 서명합니다.</translation>
     </message>
     <message>
@@ -554,7 +554,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">메시지 검증(&amp;V)</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Fujicoin addresses</source>
         <translation type="unfinished">해당 비트코인 주소로 서명되었는지 확인하기 위해 메시지를 검증합니다.</translation>
     </message>
     <message>
@@ -614,8 +614,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">피어에 연결 중...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">지불 요청하기 (QR 코드와 bitcoin을 생성합니다: URIs)</translation>
+        <source>Request payments (generates QR codes and fujicoin: URIs)</source>
+        <translation type="unfinished">지불 요청하기 (QR 코드와 fujicoin을 생성합니다: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -672,7 +672,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Crtl + Q</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed Fujicoin Transaction</source>
         <translation type="unfinished">부분적으로 서명된 비트코인 트랜잭션 불러오기</translation>
     </message>
     <message>
@@ -680,7 +680,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">PSBT 혹은 클립보드에서 불러오기</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed Fujicoin Transaction from clipboard</source>
         <translation type="unfinished">클립보드로부터 부분적으로 서명된 비트코인 트랜잭션 불러오기</translation>
     </message>
     <message>
@@ -700,8 +700,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">받는 주소들(&amp;R)</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">bitcoin 열기: URI</translation>
+        <source>Open a fujicoin: URI</source>
+        <translation type="unfinished">fujicoin 열기: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -738,7 +738,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">지갑 이동</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Fujicoin command-line options</source>
         <translation type="unfinished">사용할 수 있는 비트코인 명령줄 옵션 목록을 가져오기 위해 %1 도움말 메시지를 표시합니다.</translation>
     </message>
     <message>
@@ -798,7 +798,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">보기(&amp;H)</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to Fujicoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>비트코인 네트워크에 활성화된 %n연결</numerusform>
@@ -1293,7 +1293,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">보내는 주소 편집</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid Fujicoin address.</source>
         <translation type="unfinished">입력한 "%1" 주소는 올바른 비트코인 주소가 아닙니다.</translation>
     </message>
     <message>
@@ -1409,7 +1409,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">커스텀 데이터 폴더 사용:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Fujicoin</source>
         <translation type="unfinished">비트코인</translation>
     </message>
     <message numerus="yes">
@@ -1450,7 +1450,7 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the Fujicoin block chain.</source>
         <translation type="unfinished">%1은 비트코인 블록체인의 사본을 다운로드하여 저장합니다.</translation>
     </message>
     <message>
@@ -1473,11 +1473,11 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">유형</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the fujicoin network, as detailed below.</source>
         <translation type="unfinished">최근 거래는 아직 보이지 않을 수 있습니다. 따라서 당신의 지갑의 잔액이 틀릴 수도 있습니다. 이 정보는 당신의 지갑이 비트코인 네트워크와 완전한 동기화를 완료하면, 아래의 설명과 같이 정확해집니다.</translation>
     </message>
     <message>
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend fujicoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">아직 표시되지 않은 거래의 영향을 받는 비트코인을 사용하려고 하는 것은 네트워크에서 허가되지 않습니다.</translation>
     </message>
     <message>
@@ -1528,7 +1528,7 @@ The migration process will create a backup of the wallet before migrating. This 
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open bitcoin URI</source>
+        <source>Open fujicoin URI</source>
         <translation type="unfinished">비트코인 URI 열기</translation>
     </message>
     <message>
@@ -1688,7 +1688,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">연결 요청을 허용 (&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Fujicoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished">SOCKS5 프록시를 통해 비트코인 네트워크에 연결합니다.</translation>
     </message>
     <message>
@@ -1768,8 +1768,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">코인 상세 제어기능에 대한 표시 여부를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Bitcoin 네트워크에 연결합니다.</translation>
+        <source>Connect to the Fujicoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Tor onion 서비스를 위한 별도의 SOCKS5 프록시를 통해 Fujicoin 네트워크에 연결합니다.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1853,7 +1853,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">유형</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fujicoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished">표시된 정보가 오래된 것 같습니다. 당신의 지갑은 비트코인 네트워크에 연결된 뒤 자동으로 동기화 하지만, 아직 과정이 끝나지 않았습니다.</translation>
     </message>
     <message>
@@ -2040,7 +2040,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">지불 요청 오류</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <source>Cannot start fujicoin: click-to-pay handler</source>
         <translation type="unfinished">비트코인을 시작할 수 없습니다: 지급을 위한 클릭 핸들러</translation>
     </message>
     <message>
@@ -2048,8 +2048,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">URI 핸들링</translation>
     </message>
     <message>
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation type="unfinished">'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
+        <source>'fujicoin://' is not a valid URI. Use 'fujicoin:' instead.</source>
+        <translation type="unfinished">'fujicoin://"은 잘못된 URI입니다. 'fujicoin:'을 사용하십시오.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2060,7 +2060,7 @@ BIP70의 광범위한 보안 결함으로 인해 모든 가맹점에서는 지�
 이 오류가 발생하면 판매자에게 BIP21 호환 URI를 제공하도록 요청해야 합니다.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Fujicoin address or malformed URI parameters.</source>
         <translation type="unfinished">URI의 파싱에 문제가 발생했습니다. 잘못된 비트코인 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
@@ -2619,7 +2619,7 @@ For more information on using this console, type %6.
         <translation type="unfinished">메시지(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fujicoin network.</source>
         <translation type="unfinished">지불 요청에 첨부되는 선택가능한 메시지 입니다. 이 메세지는 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -2908,7 +2908,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 참고: 수수료는 바이트 단위로 계산되므로 500 가상 바이트(1kvB의 절반)의 트랜잭션 크기에 대해 "kvB당 100 사토시"의 수수료율은 궁극적으로 50사토시만 수수료를 산출합니다.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for fujicoin transactions than the network can process.</source>
         <translation type="unfinished">거래량이 블록에 남은 공간보다 적은 경우, 채굴자나 중계 노드들이 최소 수수료를 허용할 수 있습니다. 최소 수수료만 지불하는건 괜찮지만, 네트워크가 처리할 수 있는 용량을 넘는 비트코인 거래가 있을 경우에는 이 거래가 승인이 안될 수 있다는 점을 유의하세요.</translation>
     </message>
     <message>
@@ -2994,7 +2994,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">사인되지 않은 것을 생성(&amp;e)</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed Fujicoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">오프라인 %1 지갑 또는 PSBT가 호환되는 하드웨어 지갑과의 사용을 위한 '부분적으로 서명 된 비트 코인 트랜잭션(PSBT)'를 생성합니다.</translation>
     </message>
     <message>
@@ -3050,7 +3050,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">추후에 거래 수수료를 올릴 수 있습니다 ('수수료로-대체', BIP-125 지원)</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Fujicoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">거래 제안을 검토해 주십시오. 이것은 당신이 저장하거나 복사한 뒤 e.g. 오프라인 %1 지갑 또는 PSBT 호환 하드웨어 지갑으로 서명할 수 있는 PSBT (부분적으로 서명된 비트코인 트랜잭션)를 생성할 것입니다.</translation>
     </message>
@@ -3060,9 +3060,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">이 트랜잭션을 생성하겠습니까?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Fujicoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">당신의 트랜잭션을 검토하세요. 당신은 트랜잭션을 생성하고 보낼 수 있습니다. 혹은 부분적으로 서명된 비트코인 트랜잭션 (PSBT, Partially Signed Bitcoin Transaction)을 생성하고, 저장하거나 복사하여 오프라인 %1지갑으로 서명할수도 있습니다. PSBT가 적용되는 하드월렛으로 서명할 수도 있습니다. </translation>
+        <translation type="unfinished">당신의 트랜잭션을 검토하세요. 당신은 트랜잭션을 생성하고 보낼 수 있습니다. 혹은 부분적으로 서명된 비트코인 트랜잭션 (PSBT, Partially Signed Fujicoin Transaction)을 생성하고, 저장하거나 복사하여 오프라인 %1지갑으로 서명할수도 있습니다. PSBT가 적용되는 하드월렛으로 서명할 수도 있습니다. </translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3124,7 +3124,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid Fujicoin address</source>
         <translation type="unfinished">경고: 잘못된 비트코인 주소입니다</translation>
     </message>
     <message>
@@ -3163,7 +3163,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">이전에 사용한 주소를 선택하기</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The Fujicoin address to send the payment to</source>
         <translation type="unfinished">이 비트코인 주소로 송금됩니다</translation>
     </message>
     <message>
@@ -3179,7 +3179,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">선택한 단위로 보낼 수량</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less fujicoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">수수료가 송금되는 금액에서 공제됩니다. 수령자는 금액 필드에서 입력한 금액보다 적은 금액을 전송받게 됩니다. 받는 사람이 여러 명인 경우 수수료는 균등하게 나누어집니다.</translation>
     </message>
     <message>
@@ -3199,8 +3199,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">이 주소에 라벨을 입력하면 사용된 주소 목록에 라벨이 표시됩니다</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">bitcoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
+        <source>A message that was attached to the fujicoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fujicoin network.</source>
+        <translation type="unfinished">fujicoin: URI에 추가된 메시지는 참고를 위해 거래내역과 함께 저장될 것입니다. Note: 이 메시지는 비트코인 네트워크로 전송되지 않습니다.</translation>
     </message>
 </context>
 <context>
@@ -3225,7 +3225,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">메시지 서명(&amp;S)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The Fujicoin address to sign the message with</source>
         <translation type="unfinished">메세지를 서명할 비트코인 주소</translation>
     </message>
     <message>
@@ -3245,7 +3245,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">서명</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this Fujicoin address</source>
         <translation type="unfinished">당신이 이 비트코인 주소를 소유한다는 증명을 위해 메시지를 서명합니다</translation>
     </message>
     <message>
@@ -3269,7 +3269,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">메시지를 검증하기 위해 아래 칸에 각각 지갑 주소와 메시지, 서명을 입력하세요 (메시지 원본의 띄어쓰기, 들여쓰기, 행 나눔 등이 정확하게 입력되어야 하므로 원본을 복사해서 입력하세요). 네트워크 침입자의 속임수에 넘어가지 않도록 서명된 메시지 내용 이외의 내용은 참고하지 않도록 유의하세요. 이 기능은 단순히 서명한 쪽에서 해당 주소로 송금을 받을 수 있다는 것을 증명하는 것 뿐이며 그 이상은 어떤 것도 보증하지 않습니다.</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The Fujicoin address the message was signed with</source>
         <translation type="unfinished">메세지의 서명에 사용된 비트코인 주소</translation>
     </message>
     <message>
@@ -3281,7 +3281,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">메세지의 서명되었을 때의 시그니처</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Fujicoin address</source>
         <translation type="unfinished">입력된 비트코인 주소로 메시지가 서명되었는지 검증합니다</translation>
     </message>
     <message>
@@ -3904,7 +3904,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>fujicoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 개발자들</translation>
@@ -3926,7 +3926,7 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished">오류 : 덤프파일 식별자 기록이 잘못되었습니다. "%s"이 아닌 "%s"를 얻었습니다.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <source>Error: Dumpfile version is not supported. This version of fujicoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <translation type="unfinished">오류 : 덤프파일 버젼이 지원되지 않습니다. 이 비트코인 지갑 버젼은 오직 버젼1의 덤프파일을 지원합니다. %s버젼의 덤프파일을 얻었습니다.</translation>
     </message>
     <message>

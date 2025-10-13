@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) The Bitcoin Core developers
+# Copyright (c) The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the IPC (multiprocess) interface."""
@@ -8,7 +8,7 @@ from io import BytesIO
 from pathlib import Path
 import shutil
 from test_framework.messages import (CBlock, CTransaction, ser_uint256, COIN)
-from test_framework.test_framework import (BitcoinTestFramework, assert_equal)
+from test_framework.test_framework import (FujicoinTestFramework, assert_equal)
 from test_framework.wallet import MiniWallet
 
 # Test may be skipped and not have capnp installed
@@ -18,7 +18,7 @@ except ImportError:
     pass
 
 
-class IPCInterfaceTest(BitcoinTestFramework):
+class IPCInterfaceTest(FujicoinTestFramework):
 
     def skip_test_if_missing_module(self):
         self.skip_if_no_ipc()

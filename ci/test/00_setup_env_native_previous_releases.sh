@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2019-present The Bitcoin Core developers
+# Copyright (c) 2019-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,7 +15,7 @@ export TEST_RUNNER_EXTRA="--previous-releases --coverage --extended --exclude fe
 export GOAL="install"
 export CI_LIMIT_STACK_SIZE=1
 export DOWNLOAD_PREVIOUS_RELEASES="true"
-export BITCOIN_CONFIG="\
+export FUJICOIN_CONFIG="\
  -DWITH_ZMQ=ON -DBUILD_GUI=ON -DREDUCE_EXPORTS=ON \
  -DCMAKE_BUILD_TYPE=Debug \
  -DCMAKE_C_FLAGS='-funsigned-char' \

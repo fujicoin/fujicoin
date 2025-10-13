@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2022 The Bitcoin Core developers
+# Copyright (c) 2022 The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test signet miner tool"""
@@ -14,7 +14,7 @@ import time
 from test_framework.blocktools import DIFF_1_N_BITS, SIGNET_HEADER
 from test_framework.key import ECKey
 from test_framework.script_util import CScript, key_to_p2wpkh_script
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import FujicoinTestFramework
 from test_framework.util import (
     assert_equal,
     wallet_importprivkey,
@@ -36,7 +36,7 @@ def get_signet_commitment(segwit_commitment):
             return el[4:].hex()
     return None
 
-class SignetMinerTest(BitcoinTestFramework):
+class SignetMinerTest(FujicoinTestFramework):
     def set_test_params(self):
         self.chain = "signet"
         self.setup_clean_chain = True
@@ -58,7 +58,7 @@ class SignetMinerTest(BitcoinTestFramework):
     def skip_test_if_missing_module(self):
         self.skip_if_no_cli()
         self.skip_if_no_wallet()
-        self.skip_if_no_bitcoin_util()
+        self.skip_if_no_fujicoin_util()
 
     def setup_network(self):
         self.setup_nodes()

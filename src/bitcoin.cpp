@@ -1,8 +1,8 @@
-// Copyright (c) 2025 The Bitcoin Core developers
+// Copyright (c) 2025 The Fujicoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <bitcoin-build-config.h> // IWYU pragma: keep
+#include <fujicoin-build-config.h> // IWYU pragma: keep
 
 #include <clientversion.h>
 #include <util/fs.h>
@@ -20,26 +20,26 @@ const TranslateFn G_TRANSLATION_FUN{nullptr};
 static constexpr auto HELP_USAGE = R"(Usage: %s [OPTIONS] COMMAND...
 
 Options:
-  -m, --multiprocess     Run multiprocess binaries bitcoin-node, bitcoin-gui.
-  -M, --monolithic       Run monolithic binaries bitcoind, bitcoin-qt. (Default behavior)
+  -m, --multiprocess     Run multiprocess binaries fujicoin-node, fujicoin-gui.
+  -M, --monolithic       Run monolithic binaries fujicoind, fujicoin-qt. (Default behavior)
   -v, --version          Show version information
   -h, --help             Show full help message
 
 Commands:
-  gui [ARGS]     Start GUI, equivalent to running 'bitcoin-qt [ARGS]' or 'bitcoin-gui [ARGS]'.
-  node [ARGS]    Start node, equivalent to running 'bitcoind [ARGS]' or 'bitcoin-node [ARGS]'.
-  rpc [ARGS]     Call RPC method, equivalent to running 'bitcoin-cli -named [ARGS]'.
-  wallet [ARGS]  Call wallet command, equivalent to running 'bitcoin-wallet [ARGS]'.
-  tx [ARGS]      Manipulate hex-encoded transactions, equivalent to running 'bitcoin-tx [ARGS]'.
+  gui [ARGS]     Start GUI, equivalent to running 'fujicoin-qt [ARGS]' or 'fujicoin-gui [ARGS]'.
+  node [ARGS]    Start node, equivalent to running 'fujicoind [ARGS]' or 'fujicoin-node [ARGS]'.
+  rpc [ARGS]     Call RPC method, equivalent to running 'fujicoin-cli -named [ARGS]'.
+  wallet [ARGS]  Call wallet command, equivalent to running 'fujicoin-wallet [ARGS]'.
+  tx [ARGS]      Manipulate hex-encoded transactions, equivalent to running 'fujicoin-tx [ARGS]'.
   help           Show full help message.
 )";
 
 static constexpr auto HELP_FULL = R"(
 Additional less commonly used commands:
-  bench [ARGS]      Run bench command, equivalent to running 'bench_bitcoin [ARGS]'.
-  chainstate [ARGS] Run bitcoin kernel chainstate util, equivalent to running 'bitcoin-chainstate [ARGS]'.
-  test [ARGS]       Run unit tests, equivalent to running 'test_bitcoin [ARGS]'.
-  test-gui [ARGS]   Run GUI unit tests, equivalent to running 'test_bitcoin-qt [ARGS]'.
+  bench [ARGS]      Run bench command, equivalent to running 'bench_fujicoin [ARGS]'.
+  chainstate [ARGS] Run fujicoin kernel chainstate util, equivalent to running 'fujicoin-chainstate [ARGS]'.
+  test [ARGS]       Run unit tests, equivalent to running 'test_fujicoin [ARGS]'.
+  test-gui [ARGS]   Run GUI unit tests, equivalent to running 'test_fujicoin-qt [ARGS]'.
 )";
 
 static constexpr auto HELP_SHORT = R"(
@@ -78,12 +78,12 @@ int main(int argc, char* argv[])
                 return EXIT_FAILURE;
             }
         } else if (cmd.command == "gui") {
-            args.emplace_back(cmd.use_multiprocess ? "bitcoin-gui" : "bitcoin-qt");
+            args.emplace_back(cmd.use_multiprocess ? "fujicoin-gui" : "fujicoin-qt");
         } else if (cmd.command == "node") {
-            args.emplace_back(cmd.use_multiprocess ? "bitcoin-node" : "bitcoind");
+            args.emplace_back(cmd.use_multiprocess ? "fujicoin-node" : "fujicoind");
         } else if (cmd.command == "rpc") {
-            args.emplace_back("bitcoin-cli");
-            // Since "bitcoin rpc" is a new interface that doesn't need to be
+            args.emplace_back("fujicoin-cli");
+            // Since "fujicoin rpc" is a new interface that doesn't need to be
             // backward compatible, enable -named by default so it is convenient
             // for callers to use a mix of named and unnamed parameters. Callers
             // can override this by specifying -nonamed, but should not need to
@@ -91,19 +91,19 @@ int main(int argc, char* argv[])
             // as unnamed parameters.
             args.emplace_back("-named");
         } else if (cmd.command == "wallet") {
-            args.emplace_back("bitcoin-wallet");
+            args.emplace_back("fujicoin-wallet");
         } else if (cmd.command == "tx") {
-            args.emplace_back("bitcoin-tx");
+            args.emplace_back("fujicoin-tx");
         } else if (cmd.command == "bench") {
-            args.emplace_back("bench_bitcoin");
+            args.emplace_back("bench_fujicoin");
         } else if (cmd.command == "chainstate") {
-            args.emplace_back("bitcoin-chainstate");
+            args.emplace_back("fujicoin-chainstate");
         } else if (cmd.command == "test") {
-            args.emplace_back("test_bitcoin");
+            args.emplace_back("test_fujicoin");
         } else if (cmd.command == "test-gui") {
-            args.emplace_back("test_bitcoin-qt");
+            args.emplace_back("test_fujicoin-qt");
         } else if (cmd.command == "util") {
-            args.emplace_back("bitcoin-util");
+            args.emplace_back("fujicoin-util");
         } else {
             throw std::runtime_error(strprintf("Unrecognized command: '%s'", cmd.command));
         }
@@ -143,12 +143,12 @@ CommandLine ParseCommandLine(int argc, char* argv[])
     return cmd;
 }
 
-//! Execute the specified bitcoind, bitcoin-qt or other command line in `args`
+//! Execute the specified fujicoind, fujicoin-qt or other command line in `args`
 //! using src, bin and libexec directory paths relative to this executable, where
 //! the path to this executable is specified in `wrapper_argv0`.
 //!
 //! @param args Command line arguments to execute, where first argument should
-//!             be a relative path to a bitcoind, bitcoin-qt or other executable
+//!             be a relative path to a fujicoind, fujicoin-qt or other executable
 //!             that will be located on the PATH or relative to wrapper_argv0.
 //!
 //! @param wrapper_argv0 String containing first command line argument passed to
@@ -159,7 +159,7 @@ CommandLine ParseCommandLine(int argc, char* argv[])
 //! @note This function doesn't currently print anything but can be debugged
 //! from the command line using strace or dtrace like:
 //!
-//!     strace -e trace=execve -s 10000 build/bin/bitcoin ...
+//!     strace -e trace=execve -s 10000 build/bin/fujicoin ...
 //!     dtrace -n 'proc:::exec-success  /pid == $target/ { trace(curpsinfo->pr_psargs); }' -c ...
 static void ExecCommand(const std::vector<const char*>& args, std::string_view wrapper_argv0)
 {
@@ -194,7 +194,7 @@ static void ExecCommand(const std::vector<const char*>& args, std::string_view w
     // specified executable. Avoid doing this if it looks like the wrapper
     // executable was invoked by path, rather than by search, to avoid
     // unintentionally launching system executables in a local build.
-    // (https://github.com/bitcoin/bitcoin/pull/31375#discussion_r1861814807)
+    // (https://github.com/fujicoin/fujicoin/pull/31375#discussion_r1861814807)
     const bool fallback_os_search{!fs::PathFromString(std::string{wrapper_argv0}).has_parent_path()};
 
     // If wrapper is installed in a bin/ directory, look for target executable

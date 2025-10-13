@@ -1,15 +1,15 @@
-# Copyright (c) 2024-present The Bitcoin Core developers
+# Copyright (c) 2024-present The Fujicoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or https://opensource.org/license/mit/.
 
 include(GNUInstallDirs)
 
-# TODO: libbitcoinkernel is a work in progress consensus engine
+# TODO: libfujicoinkernel is a work in progress consensus engine
 #       library, as more and more modules are decoupled from the
 #       consensus engine, this list will shrink to only those
 #       which are absolutely necessary.
-add_library(bitcoinkernel
-  bitcoinkernel.cpp
+add_library(fujicoinkernel
+  fujicoinkernel.cpp
   chain.cpp
   checks.cpp
   chainparams.cpp
@@ -79,12 +79,12 @@ add_library(bitcoinkernel
   ../validation.cpp
   ../validationinterface.cpp
   ../versionbits.cpp
-  $<TARGET_OBJECTS:bitcoin_clientversion>
-  $<TARGET_OBJECTS:bitcoin_crypto>
+  $<TARGET_OBJECTS:fujicoin_clientversion>
+  $<TARGET_OBJECTS:fujicoin_crypto>
   $<TARGET_OBJECTS:leveldb>
   $<TARGET_OBJECTS:crc32c>
 )
-target_link_libraries(bitcoinkernel
+target_link_libraries(fujicoinkernel
   PRIVATE
     core_interface
     secp256k1_objs
@@ -94,33 +94,33 @@ target_link_libraries(bitcoinkernel
     Boost::headers
 )
 
-target_include_directories(bitcoinkernel PRIVATE $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/src/leveldb/include>)
+target_include_directories(fujicoinkernel PRIVATE $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/src/leveldb/include>)
 
-# libbitcoinkernel requires default symbol visibility, explicitly
+# libfujicoinkernel requires default symbol visibility, explicitly
 # specify that here so that things still work even when user
 # configures with -DREDUCE_EXPORTS=ON
 #
 # Note this is a quick hack that will be removed as we
 # incrementally define what to export from the library.
-set_target_properties(bitcoinkernel PROPERTIES
+set_target_properties(fujicoinkernel PROPERTIES
   CXX_VISIBILITY_PRESET default
 )
 
-# Add a convenience libbitcoinkernel target as a synonym for bitcoinkernel.
-add_custom_target(libbitcoinkernel)
-add_dependencies(libbitcoinkernel bitcoinkernel)
+# Add a convenience libfujicoinkernel target as a synonym for fujicoinkernel.
+add_custom_target(libfujicoinkernel)
+add_dependencies(libfujicoinkernel fujicoinkernel)
 
-configure_file(${PROJECT_SOURCE_DIR}/libbitcoinkernel.pc.in ${PROJECT_BINARY_DIR}/libbitcoinkernel.pc @ONLY)
-install(FILES ${PROJECT_BINARY_DIR}/libbitcoinkernel.pc DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig" COMPONENT libbitcoinkernel)
+configure_file(${PROJECT_SOURCE_DIR}/libfujicoinkernel.pc.in ${PROJECT_BINARY_DIR}/libfujicoinkernel.pc @ONLY)
+install(FILES ${PROJECT_BINARY_DIR}/libfujicoinkernel.pc DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig" COMPONENT libfujicoinkernel)
 
-install(TARGETS bitcoinkernel
+install(TARGETS fujicoinkernel
   RUNTIME
     DESTINATION ${CMAKE_INSTALL_BINDIR}
-    COMPONENT libbitcoinkernel
+    COMPONENT libfujicoinkernel
   LIBRARY
     DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    COMPONENT libbitcoinkernel
+    COMPONENT libfujicoinkernel
   ARCHIVE
     DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    COMPONENT libbitcoinkernel
+    COMPONENT libfujicoinkernel
 )
