@@ -183,7 +183,7 @@ public:
     /**
      * Whether this object is a privacy network.
      * TODO: consider adding IsCJDNS() here when more peers adopt CJDNS, see:
-     * https://github.com/fujicoin/fujicoin/pull/27411#issuecomment-1497176155
+     * https://github.com/bitcoin/bitcoin/pull/27411#issuecomment-1497176155
      */
     [[nodiscard]] bool IsPrivacyNet() const { return IsTor() || IsI2P(); }
 

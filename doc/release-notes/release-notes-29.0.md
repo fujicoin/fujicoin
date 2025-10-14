@@ -1,17 +1,17 @@
 Fujicoin Core version 29.0 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-29.0/>
+  <https://bitcoincore.org/bin/bitcoin-core-29.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -137,7 +137,7 @@ The build system has been migrated from Autotools to CMake:
 
 1. The minimum required CMake version is 3.22.
 2. In-source builds are not allowed. When using a subdirectory within the root source tree as a build directory, it is recommended that its name includes the substring "build".
-3. CMake variables may be used to configure the build system. **Some defaults have changed.** For example, you will now need to add `-DWITH_ZMQ=ON` to build with zmq and `-DBUILD_GUI=ON` to build `fujicoin-qt`. See [Autotools to CMake Options Mapping](https://github.com/fujicoin-core/fujicoin-devwiki/wiki/Autotools-to-CMake-Options-Mapping) for details.
+3. CMake variables may be used to configure the build system. **Some defaults have changed.** For example, you will now need to add `-DWITH_ZMQ=ON` to build with zmq and `-DBUILD_GUI=ON` to build `fujicoin-qt`. See [Autotools to CMake Options Mapping](https://github.com/bitcoin-core/bitcoin-devwiki/wiki/Autotools-to-CMake-Options-Mapping) for details.
 4. For single-configuration generators, the default build configuration (`CMAKE_BUILD_TYPE`) is "RelWithDebInfo". However, for the "Release" configuration, CMake defaults to the compiler optimization flag `-O3`, which has not been extensively tested with Fujicoin Core. Therefore, the build system replaces it with `-O2`.
 5. By default, the built executables and libraries are located in the `bin/` and `lib/` subdirectories of the build directory.
 6. The build system supports component‐based installation. The names of the installable components coincide with the build target names. For example:
@@ -155,7 +155,7 @@ For more detailed guidance on configuring and using CMake, please refer to the o
 
 ### Tools and Utilities
 
-- A new tool [`utxo_to_sqlite.py`](https://github.com/fujicoin/fujicoin/blob/v29.0/contrib/utxo-tools/utxo_to_sqlite.py)
+- A new tool [`utxo_to_sqlite.py`](https://github.com/bitcoin/bitcoin/blob/v29.0/contrib/utxo-tools/utxo_to_sqlite.py)
   converts a compact-serialized UTXO snapshot (as created with the
   `dumptxoutset` RPC) to a SQLite3 database. Refer to the script's `--help`
   output for more details. (#27432)
@@ -258,4 +258,4 @@ Thanks to everyone who directly contributed to this release:
 - yancy
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

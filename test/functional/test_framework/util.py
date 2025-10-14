@@ -324,7 +324,7 @@ def wait_until_helper_internal(predicate, *, timeout=60, lock=None, timeout_fact
 def bpf_cflags():
     return [
         "-Wno-error=implicit-function-declaration",
-        "-Wno-duplicate-decl-specifier",  # https://github.com/fujicoin/fujicoin/issues/32322
+        "-Wno-duplicate-decl-specifier",  # https://github.com/bitcoin/bitcoin/issues/32322
     ]
 
 

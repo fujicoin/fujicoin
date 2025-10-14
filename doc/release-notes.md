@@ -3,18 +3,18 @@ v30.0 Release Notes
 
 Fujicoin Core version v30.0 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-30.0/>
+  <https://bitcoincore.org/bin/bitcoin-core-30.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -126,9 +126,9 @@ IPC Mining Interface
   listen on a unix socket for IPC client connections, allowing clients to request block
   templates and submit mined blocks. The `-m` option launches a new internal binary
   (`fujicoin-node` instead of `fujicoind`) and is currently required but will become optional
-  in the future (with [#33229](https://github.com/fujicoin/fujicoin/pull/33229)).
+  in the future (with [#33229](https://github.com/bitcoin/bitcoin/pull/33229)).
 
-- IPC connectivity introduces new dependencies (see [multiprocess.md](https://github.com/fujicoin/fujicoin/blob/master/doc/multiprocess.md)),
+- IPC connectivity introduces new dependencies (see [multiprocess.md](https://github.com/bitcoin/bitcoin/blob/master/doc/multiprocess.md)),
   which can be turned off with the `-DENABLE_IPC=OFF` build option if you do not intend
   to use IPC. (#31802)
 
@@ -435,4 +435,4 @@ Thanks to everyone who directly contributed to this release:
 - zaidmstrr
 
 As well as to everyone that helped with translations on
-[Transifex](https://explore.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://explore.transifex.com/bitcoin/bitcoin/).

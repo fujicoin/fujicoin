@@ -148,7 +148,7 @@ BOOST_AUTO_TEST_CASE(feefrac_operators)
     FeeFrac max_fee2{1, 1};
     BOOST_CHECK(max_fee >= max_fee2);
 
-    // Test for integer overflow issue (https://github.com/fujicoin/fujicoin/issues/32294)
+    // Test for integer overflow issue (https://github.com/bitcoin/bitcoin/issues/32294)
     BOOST_CHECK_EQUAL((FeeFrac{0x7ffffffdfffffffb, 0x7ffffffd}.EvaluateFeeDown(0x7fffffff)), 0x7fffffffffffffff);
 }
 

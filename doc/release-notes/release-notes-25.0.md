@@ -3,18 +3,18 @@
 
 Fujicoin Core version 25.0 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-25.0/>
+  <https://bitcoincore.org/bin/bitcoin-core-25.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -60,7 +60,7 @@ Updated RPCs
 ------------
 
 - All JSON-RPC methods accept a new [named
-  parameter](https://github.com/fujicoin/fujicoin/blob/master/doc/JSON-RPC-interface.md#parameter-passing) called `args` that can
+  parameter](https://github.com/bitcoin/bitcoin/blob/master/doc/JSON-RPC-interface.md#parameter-passing) called `args` that can
   contain positional parameter values. This is a convenience to allow some
   parameter values to be passed by name without having to name every value. The
   python test framework and `fujicoin-cli` tool both take advantage of this, so
@@ -208,7 +208,7 @@ Binary verification
   In this release and moving forward it will verify that the binaries are
   signed by a _threshold of trusted keys_. For more details and
   examples, see:
-  https://github.com/fujicoin/fujicoin/blob/master/contrib/verify-binaries/README.md
+  https://github.com/bitcoin/bitcoin/blob/master/contrib/verify-binaries/README.md
   (#27358)
 
 Low-level changes
@@ -337,4 +337,4 @@ Thanks to everyone who directly contributed to this release:
 - Yusuf Sahin HAMZA
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://www.transifex.com/bitcoin/bitcoin/).

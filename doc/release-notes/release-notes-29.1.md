@@ -1,17 +1,17 @@
 Fujicoin Core version 29.1 is now available from:
 
-  <https://fujicoincore.org/bin/fujicoin-core-29.1/>
+  <https://bitcoincore.org/bin/bitcoin-core-29.1/>
 
 This release includes various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/fujicoin/fujicoin/issues>
+  <https://github.com/bitcoin/bitcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://fujicoincore.org/en/list/announcements/join/>
+  <https://bitcoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -225,5 +225,5 @@ Thanks to everyone who directly contributed to this release:
 - zaidmstrr
 
 As well as to everyone that helped with translations on
-[Transifex](https://explore.transifex.com/fujicoin/fujicoin/).
+[Transifex](https://explore.transifex.com/bitcoin/bitcoin/).
 

@@ -296,7 +296,7 @@ jobs:
       - name: Clone corpora
         if: matrix.job-type == 'fuzz'
         run: |
-          git clone --depth=1 https://github.com/fujicoin-core/qa-assets "${RUNNER_TEMP}/qa-assets"
+          git clone --depth=1 https://github.com/bitcoin-core/qa-assets "${RUNNER_TEMP}/qa-assets"
           cd "${RUNNER_TEMP}/qa-assets"
           echo "Using qa-assets repo from commit ..."
           git log -1

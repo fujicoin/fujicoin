@@ -618,10 +618,10 @@ static RPCHelpMan getblocktemplate()
         "If the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'.\n"
         "It returns data needed to construct a block to work on.\n"
         "For full specification, see BIPs 22, 23, 9, and 145:\n"
-        "    https://github.com/fujicoin/bips/blob/master/bip-0022.mediawiki\n"
-        "    https://github.com/fujicoin/bips/blob/master/bip-0023.mediawiki\n"
-        "    https://github.com/fujicoin/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes\n"
-        "    https://github.com/fujicoin/bips/blob/master/bip-0145.mediawiki\n",
+        "    https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki\n"
+        "    https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki\n"
+        "    https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes\n"
+        "    https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki\n",
         {
             {"template_request", RPCArg::Type::OBJ, RPCArg::Optional::NO, "Format of the template",
             {
@@ -1048,7 +1048,7 @@ static RPCHelpMan submitblock()
     return RPCHelpMan{
         "submitblock",
         "Attempts to submit new block to network.\n"
-        "See https://en.fujicoin.it/wiki/BIP_0022 for full specification.\n",
+        "See https://en.bitcoin.it/wiki/BIP_0022 for full specification.\n",
         {
             {"hexdata", RPCArg::Type::STR_HEX, RPCArg::Optional::NO, "the hex-encoded block data to submit"},
             {"dummy", RPCArg::Type::STR, RPCArg::DefaultHint{"ignored"}, "dummy value, for compatibility with BIP22. This value is ignored."},

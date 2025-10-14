@@ -12,7 +12,7 @@ export PACKAGES="valgrind python3-zmq libevent-dev libboost-dev libzmq3-dev libs
 export PIP_PACKAGES="--break-system-packages pycapnp"
 export USE_VALGRIND=1
 export NO_DEPENDS=1
-# bind tests excluded for now, see https://github.com/fujicoin/fujicoin/issues/17765#issuecomment-602068547
+# bind tests excluded for now, see https://github.com/bitcoin/bitcoin/issues/17765#issuecomment-602068547
 export TEST_RUNNER_EXTRA="--exclude rpc_bind,feature_bind_extra"
 export GOAL="install"
 # TODO enable GUI

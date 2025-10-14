@@ -194,7 +194,7 @@ static void ExecCommand(const std::vector<const char*>& args, std::string_view w
     // specified executable. Avoid doing this if it looks like the wrapper
     // executable was invoked by path, rather than by search, to avoid
     // unintentionally launching system executables in a local build.
-    // (https://github.com/fujicoin/fujicoin/pull/31375#discussion_r1861814807)
+    // (https://github.com/bitcoin/bitcoin/pull/31375#discussion_r1861814807)
     const bool fallback_os_search{!fs::PathFromString(std::string{wrapper_argv0}).has_parent_path()};
 
     // If wrapper is installed in a bin/ directory, look for target executable

@@ -174,7 +174,7 @@ git fetch upstream pull/<number>/head:pr-<number> && git switch pr-<number>
 
 > [!NOTE]
 > The remote named "upstream" here must be the one that the pull request was opened against.
-> e.g. github.com/fujicoin/fujicoin.git or for the GUI github.com/fujicoin-core/gui
+> e.g. github.com/fujicoin/fujicoin.git or for the GUI github.com/bitcoin-core/gui
 
 Make these easier to use by adding aliases to your git config:
 

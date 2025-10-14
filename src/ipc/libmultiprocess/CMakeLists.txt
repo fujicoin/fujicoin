@@ -49,7 +49,7 @@ endif()
 # Check for Cap'n Proto / Clang / C++20 incompatibility
 # Cap'n Proto 0.9.x and 0.10.x are incompatible with Clang 16+ when using C++20
 # due to P2468R2 implementation. This was fixed in Cap'n Proto 1.0+.
-# See: https://github.com/fujicoin-core/libmultiprocess/issues/199
+# See: https://github.com/bitcoin-core/libmultiprocess/issues/199
 if((CapnProto_VERSION VERSION_GREATER_EQUAL "0.9.0") AND
    (CapnProto_VERSION VERSION_LESS "1.0.0") AND
    (CMAKE_CXX_COMPILER_ID STREQUAL "Clang") AND
