@@ -43,7 +43,7 @@ function(add_maintenance_targets)
 endfunction()
 
 function(add_windows_deploy_target)
-  if(MINGW AND TARGET fujicoin AND TARGET fujicoin-qt AND TARGET fujicoind AND TARGET fujicoin-cli AND TARGET fujicoin-tx AND TARGET fujicoin-wallet AND TARGET fujicoin-util AND TARGET test_fujicoin)
+  if(MINGW AND TARGET fujicoin AND TARGET fujicoin-qt AND TARGET fujicoind AND TARGET fujicoin-cli AND TARGET fujicoin-tx AND TARGET fujicoin-wallet AND TARGET fujicoin-util)
     find_program(MAKENSIS_EXECUTABLE makensis)
     if(NOT MAKENSIS_EXECUTABLE)
       add_custom_target(deploy
@@ -66,7 +66,6 @@ function(add_windows_deploy_target)
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-tx> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-tx>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-wallet> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-wallet>
       COMMAND ${CMAKE_STRIP} $<TARGET_FILE:fujicoin-util> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:fujicoin-util>
-      COMMAND ${CMAKE_STRIP} $<TARGET_FILE:test_fujicoin> -o ${PROJECT_BINARY_DIR}/release/$<TARGET_FILE_NAME:test_fujicoin>
       COMMAND ${MAKENSIS_EXECUTABLE} -V2 ${PROJECT_BINARY_DIR}/fujicoin-win64-setup.nsi
       VERBATIM
     )
