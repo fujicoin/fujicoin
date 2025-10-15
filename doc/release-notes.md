@@ -3,14 +3,14 @@ v30.0 Release Notes
 
 Fujicoin Core version v30.0 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-30.0/>
+  <https://download.fujicoin.org/fujicoin-core/fujicoin-v30.0/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/bitcoin/bitcoin/issues>
+  <https://github.com/fujicoin/fujicoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -50,33 +50,12 @@ Policy
   assumed to not affect any known typically formed standard transactions. The
   change was done to prepare for a possible BIP54 deployment in the future. (#32521)
 
-- `-datacarriersize` is increased to 100,000 by default, which effectively uncaps
-  the limit (as the maximum transaction size limit will be hit first). It can be
-  overridden with `-datacarriersize=83` to revert to the limit enforced in previous
-  versions. (#32406)
+- Bitcoin increased `-datacarriersize` to 100,000, while Fujicoin kept it at 83.
 
 - Multiple data carrier (OP_RETURN) outputs in a transaction are now permitted for
   relay and mining. The `-datacarriersize` limit applies to the aggregate size of
   the scriptPubKeys across all such outputs in a transaction, not including the
   scriptPubKey size itself. (#32406)
-
-- The minimum block feerate (`-blockmintxfee`) has been changed to 0.001 satoshi per
-  vB. It can still be changed using the configuration option. This option can be used
-  by miners to set a minimum feerate on packages added to block templates. (#33106)
-
-- The default minimum relay feerate (`-minrelaytxfee`) and incremental relay feerate
-  (`-incrementalrelayfee`) have been changed to 0.1 satoshis per vB. They can still
-  be changed using their respective configuration options, but it is recommended to
-  change both together if you decide to do so. (#33106)
-
-  Other minimum feerates (e.g. the dust feerate, the minimum returned by the fee
-  estimator, and all feerates used by the wallet) remain unchanged. The mempool minimum
-  feerate still changes in response to high volume.
-
-  Note that unless these lower defaults are widely adopted across the network, transactions
-  created with lower fee rates are not guaranteed to propagate or confirm. The wallet
-  feerates remain unchanged; `-mintxfee` must be changed before attempting to create
-  transactions with lower feerates using the wallet. (#33106)
 
 P2P and network changes
 -----------------------
@@ -134,15 +113,6 @@ IPC Mining Interface
 
 Install changes
 ---------------
-
-- The `test_fujicoin` executable is now installed in `libexec/` instead of `bin/`.
-  It can still be executed directly, or accessed through the new `fujicoin` command
-  as `fujicoin test`. The `libexec/` directory also contains new `fujicoin-node` and
-  `fujicoin-gui` binaries which support IPC features and are called through the
-  `fujicoin` tool. In source builds only, `test_fujicoin-qt`, `bench_fujicoin`, and
-  `fujicoin-chainstate` are also now installed to `libexec/` instead of `bin/` and
-  can be accessed through the new `fujicoin` command. See `fujicoin help` output for
-  details. (#31679)
 
 - On Windows, the installer no longer adds a “(64-bit)” suffix to entries in the
   Start Menu (#32132), and it now automatically removes obsolete artifacts during
